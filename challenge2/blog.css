@@ -100,7 +100,7 @@ i.fa.fa-play {
   text-decoration: underline;
   font-size: 0.8rem;
   width: 70vw;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 0;
   text-align: center;
 }
@@ -169,4 +169,14 @@ ul.end {
 ul.end div p {
   margin: 0;
   text-align: center;
+}
+
+div.social {
+  color: #6D6363;
+  width: 50%;
+  margin: 0 auto;
+}
+
+div.social i {
+  margin: 10px;
 }
