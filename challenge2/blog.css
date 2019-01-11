@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Open sans', sans-serif;
+  padding: 0;
+  background: #E5E5E5;
+}
+
+nav.navbar > img {
+  width: 100%;
+}
+
+nav.navbar > div {
+  position: absolute;
+  top: 20px;
+  color: #FFF;
+}
+
+nav.navbar > div, div.navbar-body, .navbar-content {
+  width: 98%;
+}
+
+.img1, .img2 {
+  margin: -3px 0;
+}
+
+div.navbar-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.icon {
+  width: 50%;
+  margin: 0;
+  margin-left: 15px;
+  display: flex;
+}
+
+div.icon div {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 5px;
+  left: 52px;
+  margin: 0 6px;
+}
+
+#list {
+  display: none;
+}
+
+div.toggle {
+  margin: 5px 30px;
+}
+
+div.toggle div {
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+div.main {
+  width: 80vw;
+  text-align: center;
+  margin: 20px 10vw;
+}
+
+.main button {
+  background: #0267C1;
+  border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: #FFF;
+  width: 45%;
+  margin: 0 auto;
+  padding: 7px
+}
+
+.fa-long-arrow-right {
+  margin-left: 4px;
+}
+
+i.fa.fa-play {
+  color: #FFF;
+  background: #0267C1;
+  text-align: center;
+  width: 30px;
+  padding: 10px 0;
+  border-radius: 30px;
+  position: relative;
+  bottom: 20px;
+  float: right;
+  margin-right: 20px;
+  box-shadow: 0 4px 7px 0 rgba(0,0,0,0.2);
+}
+
+.navbar-content ul {
+  list-style-type: none;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+div.body {
+  width: 85vw;
+  margin: 0 auto;
+  position: relative;
+  top: -25px;
+}
+
+div.body .stories {
+  display: flex;
+  width: 85vw;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+div.body .stories li {
+  flex: 0 0 100%;
+}
+
+div.card > img{
+  width: 100%;
+}
+
+div.card {
+  box-shadow: 0 4px 7px 0 rgba(0,0,0,0.2);
+  background: #FFF;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+p.title {
+  color: #0267C1;
+  margin: 2px;
+}
+
+p.subtitle {
+  color: rgba(48, 47, 47, 0.71);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 6px 2px;
+}
+
+div.card > div {
+  height: 170px;
+  overflow: auto;
+  width: 90%;
+  margin: 5px auto;
+}
+
+ul.end {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+}
+
+ul.end div p {
+  margin: 0;
+  text-align: center;
+}
