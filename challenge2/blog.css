@@ -132,7 +132,7 @@ div.card > img{
 div.card {
   box-shadow: 0 4px 7px 0 rgba(0,0,0,0.2);
   background: #FFF;
-  border-radius: 5px;
+  border-radius: 10px 10px 5px 5px;
   font-size: 0.7rem;
   height: auto;
   margin-bottom: 30px;
@@ -173,10 +173,34 @@ ul.end div p {
 
 div.social {
   color: #6D6363;
-  width: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
 div.social i {
   margin: 10px;
+}
+
+/* Begining of media queries */
+@media (min-width: 560px) {
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+
+  div.main, .navbar-content ul, div.main p {
+    margin: 0
+  }
+
+  div.main {
+    text-align: left;
+  }
+
+  .navbar-content ul {
+    text-align: right;
+  }
 }
