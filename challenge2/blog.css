@@ -176,7 +176,7 @@ div.social {
   width: 40%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 div.social i {
@@ -185,6 +185,10 @@ div.social i {
 
 /* Begining of media queries */
 @media (min-width: 560px) {
+  .img2 {
+    height: 100px;
+  }
+
   .navbar-content {
     display: flex;
     justify-content: space-between;
@@ -197,10 +201,31 @@ div.social i {
   }
 
   div.main {
+    font-size: 1.5rem;
     text-align: left;
+    margin-left: 2vw;
   }
 
   .navbar-content ul {
     text-align: right;
+    margin-right: 2vw;
+  }
+
+  .navbar-content ul li {
+    margin-bottom: 5vh;
+  }
+
+  div.main button {
+    margin-top: 3vh
+  }
+
+  ul.end {
+    width: 100%;
+    flex-flow: row wrap;
+    display: flex;
+  }
+
+  ul.end li {
+    flex: 0 0 33%;
   }
 }
