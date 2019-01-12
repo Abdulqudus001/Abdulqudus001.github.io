@@ -164,10 +164,12 @@ ul.end {
   width: 100%;
   overflow-x: auto;
   display: flex;
+  font-size: 0.8rem;
 }
 
 ul.end div p {
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -225,7 +227,37 @@ div.social i {
     display: flex;
   }
 
+  ul.end img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
   ul.end li {
     flex: 0 0 33%;
+  }
+}
+
+@media (min-width: 630px) {
+  div.body {
+    top: -80px;
+  }
+
+  div.body .stories, div.body {
+    width: 95vw;
+  }
+
+  div.body .stories li {
+    flex: 0 0 46.5%;
+    margin: 10px;
+  }
+  
+
+  
+}
+
+@media (min-width: 890px) {
+  .img2 {
+    display: none;
   }
 }
