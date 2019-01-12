@@ -171,11 +171,12 @@ ul.end div p {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  color: #6D6363;
 }
 
 div.social {
   color: #6D6363;
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
@@ -236,6 +237,10 @@ div.social i {
   ul.end li {
     flex: 0 0 33%;
   }
+
+  div.social {
+    width: 20%;
+  }
 }
 
 @media (min-width: 630px) {
@@ -250,14 +255,89 @@ div.social i {
   div.body .stories li {
     flex: 0 0 46.5%;
     margin: 10px;
-  }
-  
+  }  
 
-  
+  div.social {
+    width: 15%
+  }
+}
+
+@media (min-width: 750px) {
+  .toggle {
+    display: none;
+  }
+  div.icon {
+    width: 40vw;
+  }
+  #list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 2vw;
+    list-style-type: none;
+    float: right;
+  }
+
+  #list li {
+    margin: 0 5px;
+  }
+
+  #list > :first-child {
+    text-decoration: underline;
+  }
+
+  div.social-top {
+    display: flex;
+  }
+
+  div.social-top i {
+    margin: 2px 1vw;
+  }
+
+  div.social {
+    width: 10%;
+  }
 }
 
 @media (min-width: 890px) {
   .img2 {
     display: none;
   }
+
+  ul.end {
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  ul.end div {
+    display: flex;
+  }
+
+  ul.end div p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1020px) {
+  div.body .stories li {
+    flex: 0 0 31%;
+    margin: 10px;
+  } 
+
+  .pull-up {
+    position: relative;
+    bottom: 140px
+  }
+
+  div.body .stories, div.body {
+    width: 88vw;
+  }
+
+  div.card > div {
+    height: auto;
+  }
+
 }
