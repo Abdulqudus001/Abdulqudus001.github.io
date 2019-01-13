@@ -28,6 +28,10 @@ div.navbar-body {
   justify-content: space-between;
 }
 
+.navbar-body a {
+  color: #FFF;
+}
+
 div.icon {
   width: 50%;
   margin: 0;
@@ -44,6 +48,10 @@ div.icon div {
 }
 
 #list {
+  display: none;
+}
+
+div.social-top {
   display: none;
 }
 
@@ -280,6 +288,14 @@ div.social i {
 
   #list li {
     margin: 0 5px;
+  }
+
+  #list li:hover {
+    text-decoration: underline;
+  }
+
+  #list li a {
+    text-decoration: none;
   }
 
   #list > :first-child {
