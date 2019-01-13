@@ -322,6 +322,25 @@ div.social i {
 }
 
 @media (min-width: 1020px) {
+  #list {
+    margin-right: 1.2vw; 
+  }
+
+  #list li {
+    margin: 0 15px;
+  }
+
+  div.main p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 10vh;
+  }
+
+  div.main button {
+    width: 15vw;
+  }
+
   div.body .stories li {
     flex: 0 0 31%;
     margin: 10px;
@@ -329,7 +348,7 @@ div.social i {
 
   .pull-up {
     position: relative;
-    bottom: 140px
+    bottom: 170px
   }
 
   div.body .stories, div.body {
@@ -338,6 +357,20 @@ div.social i {
 
   div.card > div {
     height: auto;
+  }
+
+  .navbar-content ul li {
+    margin-bottom: 12vh;
+    font-size: 1rem;
+  }
+
+  ul.end {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  ul.end div p {
+    width: 150px;
   }
 
 }
