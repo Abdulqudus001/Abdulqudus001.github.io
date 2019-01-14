@@ -55,6 +55,30 @@ div.social-top {
   display: none;
 }
 
+div.hidden-nav {
+  display: none;
+}
+
+div.show-nav {
+  display: block;
+  float: right;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: rgba(0,0,0,0.2);
+  width: 100%;
+  text-align: right;
+}
+
+div.show-nav ul {
+  list-style-type: none;
+}
+
+div.show-nav ul li {
+  display: inline;
+  padding: 0 1vw;
+}
+
 div.toggle {
   margin: 5px 30px;
 }
@@ -105,12 +129,15 @@ i.fa.fa-play {
 
 .navbar-content ul {
   list-style-type: none;
-  text-decoration: underline;
   font-size: 0.8rem;
-  width: 70vw;
+  width: 25vw;
   margin: 5px auto;
   padding: 0;
   text-align: center;
+}
+
+.navbar-content ul li {
+  border-bottom: 1px solid grey;
 }
 
 div.body {
@@ -220,6 +247,7 @@ div.social i {
   .navbar-content ul {
     text-align: right;
     margin-right: 2vw;
+    width: 20vw;
   }
 
   .navbar-content ul li {
@@ -228,6 +256,10 @@ div.social i {
 
   div.main button {
     margin-top: 3vh
+  }
+  
+  div.footer {
+    margin-top: -10vh;
   }
 
   ul.end {
@@ -346,15 +378,23 @@ div.social i {
     margin: 0 15px;
   }
 
+  div.navbar-content {
+    margin-top: 100px;
+  }
+
+  div.main {
+    margin-left: 70px;
+  }
+
   div.main p {
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.5;
-    margin-bottom: 10vh;
+    margin-bottom: 7vh;
   }
 
   div.main button {
-    width: 15vw;
+    width: 10vw;
   }
 
   div.body .stories li {
@@ -375,9 +415,17 @@ div.social i {
     height: auto;
   }
 
+  .navbar-content ul {
+    width: 13vw;
+  }
+
   .navbar-content ul li {
     margin-bottom: 12vh;
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  div.footer {
+    margin-top: -30vh;
   }
 
   ul.end {

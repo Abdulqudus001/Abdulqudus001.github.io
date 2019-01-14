@@ -44,10 +44,29 @@
           <i class="fa fa-facebook"></i>
           <i class="fa fa-instagram"></i>
         </div>
+
         <div class="toggle">
           <div></div>
           <div></div>
           <div></div>
+        </div>
+        <div class="hidden-nav">
+          <ul>
+            <li>Home</li>
+            <li>Food</li>
+            <li>Parks</li>
+            <li>Mountains</li>
+            <li>Nightlife</li>
+            <li>
+              <i class="fa fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fa fa-facebook"></i>
+            </li>
+            <li>
+              <i class="fa fa-instagram"></i>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -103,6 +122,16 @@
       </li>
       <li>
         <div class="card pull-up">
+          <img src="./images/convection center.png" alt="">
+          <div>
+            <p class="title">Nightlife</p>
+            <p class="subtitle">Visit Rwanda Enjoy Nightlife</p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet, consectetu
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
           <img src="./images/Landing page.png" alt="">
           <div>
             <p class="title">Food</p>
@@ -112,22 +141,12 @@
         </div>
       </li>
       <li>
-        <div class="card longest">
+        <div class="card longest pull-up">
           <img src="./images/bicycling-1160860_640.png" alt="">
           <i class="fa fa-play"></i>
           <div>
             <p class="title">Mountain</p>
             <p class="subtitle">Bike on the Mountain</p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet, consectetu
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="card pull-up">
-          <img src="./images/convection center.png" alt="">
-          <div>
-            <p class="title">Nightlife</p>
-            <p class="subtitle">Visit Rwanda Enjoy Nightlife</p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet, consectetu
           </div>
         </div>
@@ -181,5 +200,13 @@
       <i class="fa fa-instagram"></i>
     </div>
   </div>
+
+  <script>
+    const toggle = document.getElementsByClassName('toggle')[0];
+    toggle.addEventListener('click', () => {
+      const hiddenNav = document.getElementsByClassName('hidden-nav')[0];
+      hiddenNav.classList.toggle('show-nav')
+    });
+  </script>
 </body>
 </html>
