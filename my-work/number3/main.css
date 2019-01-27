@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: #edf0f2;
+  position: relative;
 }
 
 div.top {
@@ -45,23 +46,26 @@ div.top>span.shapes div.triangle {
   border-bottom: 0px solid transparent;
 }
 
+div.body {
+  overflow: auto;
+  height: 90vh;
+}
+
 div.content {
   position: relative;
-  overflow: auto;
   width: 100%;
+  margin-bottom: 5%;
+}
+
+div.dummy {
+  height: 65px;
 }
 
 div.content .card {
   background: #fefefe;
   width: 92%;
-  margin: 2% 1% 5%;
+  margin: 2% 1%;
   padding: 20px 10px;
-}
-
-div.bottom-nav {
-  position: sticky;
-  bottom: 0;
-  width: 100%;
 }
 
 p {
@@ -84,7 +88,7 @@ p.header {
 
 p.title {
   color: #223035;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 900;
 }
 
@@ -129,12 +133,19 @@ a.show-more {
   background: #82929a;
   padding: 10px;
   text-decoration: none;
-  width: 30vw;
-  margin: 0 30vw;
+  width: 30%;
+  margin: 30px 30%;
   text-align: center;
   color: #FFF;
   border-radius: 30px;
   box-shadow: 3px 5px 2px #d2dbe0;
+  position: relative;
+}
+
+div.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 div.footer {
@@ -173,7 +184,7 @@ div.footer div:not(.semi-circle) {
 }
 
 div.semi-circle {
-  width: 16%;
+  width: 60px;
   position: relative;
   overflow: hidden;
   background: transparent;
