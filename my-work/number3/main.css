@@ -54,7 +54,7 @@ div.content {
 div.content .card {
   background: #fefefe;
   width: 92%;
-  margin: 2% 1%;
+  margin: 2% 1% 5%;
   padding: 20px 10px;
 }
 
@@ -123,6 +123,18 @@ div.slider {
 div.slider img {
   width: 45%;
   margin: 0 10px 0 0;
+}
+
+a.show-more {
+  background: #82929a;
+  padding: 10px;
+  text-decoration: none;
+  width: 30vw;
+  margin: 0 30vw;
+  text-align: center;
+  color: #FFF;
+  border-radius: 30px;
+  box-shadow: 3px 5px 2px #d2dbe0;
 }
 
 div.footer {
