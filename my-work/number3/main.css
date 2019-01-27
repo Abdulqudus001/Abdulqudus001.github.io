@@ -6,16 +6,16 @@ body {
 .frame {
   width: 100vw;
   height: 100vh;
-  background: #EDF0F2;
+  background: #edf0f2;
 }
 
 div.top {
   height: 4vh;
   width: 100%;
-  background: #D2DBE0;
+  background: #d2dbe0;
 }
 
-div.top>span.shapes {
+div.top > span.shapes {
   float: right;
   display: flex;
   width: 60px;
@@ -24,46 +24,60 @@ div.top>span.shapes {
   align-items: center;
 }
 
-div.top>span.shapes div:not(.triangle) {
+div.top > span.shapes div:not(.triangle) {
   width: 13px;
   height: 13px;
-  background: #82929A;
+  background: #82929a;
 }
 
-div.top>span.shapes div.circle {
+div.top > span.shapes div.circle {
   border-radius: 13px;
 }
 
-div.top>span.shapes div.triangle {
+div.top > span.shapes div.triangle {
   width: 0;
   height: 0;
-  border-top: 13px solid #82929A;
+  border-top: 13px solid #82929a;
   border-right: 7.5px solid transparent;
   border-left: 7.5px solid transparent;
   border-bottom: 0px solid transparent;
 }
 
+div.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 div.footer {
-  height: 10vh;
-  position: relative;
+  height: 8vh;
   display: flex;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
 }
 
 div.fab {
-  width: 17%;
-  height: 9.5vh;
-  border-radius: 100px;
-  background: #FAAB1A;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: #faab1a;
   position: relative;
-  left: 41.5%;
-  top: 3.8vh;
+  top: 3.3vh;
+  text-align: center;
+  display: block;
+}
+
+div.fab img {
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+  top: 13px;
 }
 
 div.footer div:not(.semi-circle) {
-  width: 40%;
+  width: 42%;
   border: 1.3px solid #344955;
   border-bottom: 0;
   border-top: 0;
@@ -71,18 +85,28 @@ div.footer div:not(.semi-circle) {
 }
 
 div.semi-circle {
-  width: 20%;
+  width: 16%;
   position: relative;
   overflow: hidden;
   background: transparent;
 }
 
 div.semi-circle:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 50%;
   width: 100%;
   height: 100%;
   border-radius: 100%;
   box-shadow: 0px 300px 0px 300px #344955;
+}
+
+@media (min-width: 980px) {
+  body {
+    display: flex;
+  }
+
+  .frame {
+    width: 27vw;
+  }
 }
