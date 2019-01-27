@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Work Sans", sans-serif;
 }
 
 .frame {
@@ -13,6 +14,7 @@ div.top {
   height: 4vh;
   width: 100%;
   background: #d2dbe0;
+  position: sticky;
 }
 
 div.top > span.shapes {
@@ -43,10 +45,65 @@ div.top > span.shapes div.triangle {
   border-bottom: 0px solid transparent;
 }
 
+div.content {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+
+div.content .card {
+  background: #fefefe;
+  width: 92%;
+  margin: 2% 1%;
+  padding: 20px 10px;
+}
+
 div.bottom-nav {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+span.topic {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.header,
+p.title {
+  margin-bottom: 10px;
+}
+
+p.header {
+  color: #747f86;
+}
+
+p.title {
+  color: #223035;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+div.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #747f86;
+}
+
+span.details {
+  display: flex;
+  color: #828d90;
+  font-size: 1.1rem;
+}
+
+span.details img {
+  margin: -3px 12px 0 0;
 }
 
 div.footer {
