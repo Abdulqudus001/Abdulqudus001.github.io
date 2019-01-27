@@ -17,7 +17,7 @@ div.top {
   position: sticky;
 }
 
-div.top > span.shapes {
+div.top>span.shapes {
   float: right;
   display: flex;
   width: 60px;
@@ -26,17 +26,17 @@ div.top > span.shapes {
   align-items: center;
 }
 
-div.top > span.shapes div:not(.triangle) {
+div.top>span.shapes div:not(.triangle) {
   width: 13px;
   height: 13px;
   background: #82929a;
 }
 
-div.top > span.shapes div.circle {
+div.top>span.shapes div.circle {
   border-radius: 13px;
 }
 
-div.top > span.shapes div.triangle {
+div.top>span.shapes div.triangle {
   width: 0;
   height: 0;
   border-top: 13px solid #82929a;
@@ -104,6 +104,18 @@ span.details {
 
 span.details img {
   margin: -3px 12px 0 0;
+}
+
+div.slider {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  overflow-x: auto;
+}
+
+div.slider img {
+  width: 45%;
+  margin: 0 10px 0 0;
 }
 
 div.footer {
