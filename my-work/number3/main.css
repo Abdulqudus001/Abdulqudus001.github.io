@@ -205,6 +205,8 @@ div.header {
 
 .paris-photos {
   display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3px;
 }
 
 .paris-photos img {
