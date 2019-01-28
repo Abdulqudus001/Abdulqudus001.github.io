@@ -206,8 +206,6 @@ div.semi-circle:before {
 
 @media (min-width: 600px) {
   body {
-    width: 90vw;
-    margin: 0 auto;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
@@ -221,14 +219,13 @@ div.semi-circle:before {
 
 @media (min-width: 1000px) {
   body {
-    width: 90vw;
-    margin: 0 auto;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
   }
 
   .frame {
     flex: 0 0 30%;
-    margin: 20px;
+    margin: 10px;
   }
 }
