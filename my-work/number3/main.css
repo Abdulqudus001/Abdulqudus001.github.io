@@ -203,6 +203,14 @@ div.header {
   color: #54646b;
 }
 
+.paris-photos {
+  display: grid;
+}
+
+.paris-photos img {
+  width: 100%;
+}
+
 a.show-more {
   background: #82929a;
   padding: 10px;
