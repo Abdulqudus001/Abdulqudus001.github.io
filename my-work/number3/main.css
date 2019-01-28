@@ -135,6 +135,74 @@ div.show-more-div {
   text-align: center;
 }
 
+span.vacation {
+  display: flex;
+  justify-content: space-around;
+}
+
+span.vacation div {
+  flex: 0 0 45%;
+}
+
+div.parrot-img img {
+  width: 100%;
+}
+
+p.vacation-idea {
+  font-weight: bold;
+  color: #54646b;
+}
+
+div.content.reunion {
+  width: 90%;
+  margin: 1%;
+  background: #fefefe;
+  padding: 4%;
+}
+
+div.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.reunion > p {
+  margin: 15px 0;
+  color: #808a8f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-align: left;
+}
+
+#reunion-header,
+#reunion-sub-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reunion-header p {
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  color: #223035;
+  width: 70%;
+}
+
+#hansen {
+  color: #8c969a;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#to-whom {
+  color: #9cabb2;
+  font-size: 0.8rem;
+}
+
+#reunion-header i {
+  color: #54646b;
+}
+
 a.show-more {
   background: #82929a;
   padding: 10px;
@@ -225,7 +293,7 @@ div.semi-circle:before {
   }
 
   .frame {
-    flex: 0 0 30%;
-    margin: 10px;
+    flex: 0 0 32%;
+    margin: 10px 5px;
   }
 }
