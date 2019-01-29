@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="246.004" height="211.303" viewBox="0 0 246.004 211.303">
+  <defs>
+    <filter id="bubble" x="0" y="0" width="246.004" height="162.997" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.71" dy="4.698" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#070707" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="notifications" transform="translate(-403.208 -1115.197)">
+    <g id="two">
+      <g transform="matrix(1, 0, 0, 1, 403.21, 1115.2)" filter="url(#bubble)">
+        <path id="bubble-2" data-name="bubble" d="M594.03,1148H454.965A16,16,0,0,0,439,1164.023v40.064c0,8.851,7.149,16.025,14.969,16.025H502c10.036,0,16.661,15.883,22.5,15.883,5.947,0,13.566-15.883,22.553-15.883H594.03A16,16,0,0,0,610,1204.087v-40.064A16,16,0,0,0,594.03,1148Z" transform="translate(-403.21 -1115.2)" fill="#ee4957"/>
+      </g>
+      <path id="heart_icon" data-name="heart icon" d="M483.49,1171.986a6.911,6.911,0,0,1,3.7,1.093,8.873,8.873,0,0,1,2.769,11.487c-1.512,2.874-7.811,8.256-13.2,12.334a.409.409,0,0,1-.5,0c-5.39-4.078-11.689-9.46-13.2-12.334a8.873,8.873,0,0,1,2.768-11.487,6.9,6.9,0,0,1,3.695-1.093c2.27,0,4.065.329,5.826,2.091l1.162,1.585,1.162-1.585c1.877-1.878,3.556-2.091,5.826-2.091" fill="#fff"/>
+      <text id="_2" data-name="2" transform="translate(506.928 1193.775)" fill="#fff" font-size="27.768" font-family="ArialMT, Arial"><tspan x="-7.722" y="0">2</tspan></text>
+      <path id="follow_icon" data-name="follow icon" d="M539.676,1198.013a.648.648,0,0,1-.663-.638l-.011-1.789c0-3.641,2.02-6.6,5.749-6.6h16.5c3.731,0,5.749,2.957,5.749,6.594v1.79a.65.65,0,0,1-.659.642ZM546,1178a7,7,0,1,1,7,7A7,7,0,0,1,546,1178Z" fill="#fff"/>
+      <text id="_1" data-name="1" transform="translate(579.928 1193.775)" fill="#fff" font-size="27.768" font-family="ArialMT, Arial"><tspan x="-7.722" y="0">1</tspan></text>
+    </g>
+    <circle id="notification_dot" data-name="notification dot" cx="4.02" cy="4.02" r="4.02" transform="translate(521.69 1318.46)" fill="#ee4957"/>
+  </g>
+</svg>
