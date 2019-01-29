@@ -19,11 +19,15 @@ body {
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
-div.header {
+div.header,
+div.footer {
   width: 100%;
-  height: 16vh;
   background: #FAFAFA;
-  border-bottom: 2px solid #DDD
+}
+
+div.header {
+  height: 16vh;
+  border-bottom: 2px solid #DDD;
 }
 
 div.top-header {
@@ -91,6 +95,15 @@ div.header div:nth-child(2) p {
   font-size: 2.0rem;
   margin: 0 auto;
 }
+
+
+div.footer {
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid #DDD
+}
+
 
 @media (min-width: 600px) {
   body {
