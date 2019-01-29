@@ -24,14 +24,13 @@ div.footer {
 }
 
 div.header {
-  height: 16vh;
+  height: 14vh;
   border-bottom: 2px solid #ddd;
 }
 
 div.top-header {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
 }
 
 div.top-header > p {
@@ -146,11 +145,49 @@ p.post-title {
 }
 div.content-body {
   width: 100%;
-  height: 50vh;
+  height: 46vh;
 }
 div.content-body img {
   width: 100%;
   height: 100%;
+}
+div.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0;
+  padding: 0 5px;
+}
+div.action span img {
+  margin: 0 5px;
+}
+div.action img {
+  width: 24px;
+  height: 24px;
+}
+div.post-response {
+  padding: 0 10px;
+}
+div.post-response p {
+  margin: 2px 0;
+}
+b#likes {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+p#comment {
+  font-size: 0.8rem;
+}
+p#comment a {
+  text-decoration: none;
+  color: #283d76;
+}
+p#timeline {
+  font-size: 0.6rem;
+  color: #bbb;
+}
+p#timeline b {
+  color: #000;
 }
 div.footer {
   height: 8vh;
