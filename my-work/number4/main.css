@@ -1,20 +1,18 @@
 @font-face {
   font-family: "Billabong";
-  src: url("./fonts/Billabong.ttf"),
-    url("./fonts/Billabong.woff");
+  src: url("./fonts/Billabong.ttf"), url("./fonts/Billabong.woff");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito',
-    sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .frame {
   width: 100vw;
   height: 100vh;
-  background: #FFF;
+  background: #fff;
   position: relative;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
 }
@@ -22,12 +20,12 @@ body {
 div.header,
 div.footer {
   width: 100%;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 div.header {
   height: 16vh;
-  border-bottom: 2px solid #DDD;
+  border-bottom: 2px solid #ddd;
 }
 
 div.top-header {
@@ -36,8 +34,7 @@ div.top-header {
   margin-bottom: 10px;
 }
 
-
-div.top-header>p {
+div.top-header > p {
   flex: 0 0 33%;
   margin: auto;
   font-weight: 700;
@@ -59,7 +56,7 @@ div.top-header span img {
   margin: 0 5px;
 }
 
-div.top-header>img {
+div.top-header > img {
   width: 30px;
   margin-right: 5px;
 }
@@ -74,36 +71,43 @@ div.header div:nth-child(2) img {
   width: 27px;
 }
 
-div.header div:nth-child(2)>div {
+div.header div:nth-child(2) > div {
   flex: 0 0 33%;
 }
 
-div.header div:nth-child(2)>span {
+div.header div:nth-child(2) > span {
   text-align: right;
   flex: 0 0 27%;
 }
 
-div.header div:nth-child(2)>span img {
+div.header div:nth-child(2) > span img {
   margin-left: 5px;
 }
 
 div.header div:nth-child(2) p {
   flex: 0 0 40%;
   text-align: center;
-  font-family: 'Billabong';
+  font-family: "Billabong";
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 2rem;
   margin: 0 auto;
 }
-
 
 div.footer {
   height: 8vh;
   position: absolute;
+  padding: 0 5%;
+  width: 90%;
   bottom: 0;
-  border-top: 2px solid #DDD
+  border-top: 2px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+div.footer img {
+  width: 30px;
+}
 
 @media (min-width: 600px) {
   body {
@@ -126,7 +130,7 @@ div.footer {
   }
 
   .frame {
-    flex: 0 0 32%;
+    flex: 0 0 30%;
     margin: 10px 5px;
   }
 }
