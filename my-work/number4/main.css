@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "Billabong";
+  src: url("./fonts/Billabong.ttf"),
+    url("./fonts/Billabong.woff");
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Nunito',
+    sans-serif;
 }
 
 .frame {
@@ -15,40 +23,74 @@ div.header {
   width: 100%;
   height: 16vh;
   background: #FAFAFA;
+  border-bottom: 2px solid #DDD
 }
 
-div.header div:nth-child(1) {
+div.top-header {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 
-div.header div:nth-child(1)>p {
-  /* width: 30%; */
+div.top-header>p {
   flex: 0 0 33%;
   margin: auto;
+  font-weight: 700;
+  font-size: 0.8rem;
 }
 
-div.header div:nth-child(1) span {
-  /* width: 40%; */
+div.top-header span {
   flex: 0 0 33%;
   display: flex;
   flex-direction: row;
   font-size: 0.8rem;
   align-items: center;
+  font-weight: 600;
 }
 
-div.header div:nth-child(1) span img {
-  width: 20px;
-  height: 20px;
+div.top-header span img {
+  width: 16px;
+  height: 16px;
   margin: 0 5px;
 }
 
-div.header div:nth-child(1)>img {
+div.top-header>img {
   width: 30px;
   margin-right: 5px;
 }
 
+div.header div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+div.header div:nth-child(2) img {
+  width: 27px;
+}
+
+div.header div:nth-child(2)>div {
+  flex: 0 0 33%;
+}
+
+div.header div:nth-child(2)>span {
+  text-align: right;
+  flex: 0 0 27%;
+}
+
+div.header div:nth-child(2)>span img {
+  margin-left: 5px;
+}
+
+div.header div:nth-child(2) p {
+  flex: 0 0 40%;
+  text-align: center;
+  font-family: 'Billabong';
+  font-weight: 400;
+  font-size: 2.0rem;
+  margin: 0 auto;
+}
 
 @media (min-width: 600px) {
   body {
