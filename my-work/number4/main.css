@@ -398,7 +398,7 @@ div.divider-h::before {
   width: 300px;
   height: 2px;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   background: #DDD;
 }
 
