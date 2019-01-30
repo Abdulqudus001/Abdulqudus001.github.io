@@ -330,6 +330,68 @@ div.bio a {
   font-weight: 600;
 }
 
+div.statuses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 15px;
+}
+
+div.post {
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+div.post p {
+  margin: 5px 0;
+}
+
+div.divider-v::before {
+  content: '';
+  width: 2px;
+  display: block;
+  height: 33px;
+  background: #DDD;
+}
+
+div.post-image,
+div.ig-tv {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid #DDD;
+  text-align: center;
+  margin: 0 10px;
+}
+
+div.ig-tv {
+  position: relative;
+}
+
+div.post-image img,
+div.ig-tv img {
+  width: 56px;
+  height: 56px;
+  border-radius: 60px;
+  margin-top: 2px;
+}
+
+div.ig-tv img {
+  opacity: 0.4;
+}
+
+div.ig-tv svg {
+  position: absolute;
+  top: 5px;
+  left: 17px;
+  width: 25px;
+  text-align: center;
+}
+
 /* ********************************
           MEDIA QUERIES
 ******************************** */
