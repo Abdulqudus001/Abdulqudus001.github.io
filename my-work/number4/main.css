@@ -33,7 +33,7 @@ div.top-header {
   justify-content: center;
 }
 
-div.top-header > p {
+div.top-header>p {
   flex: 0 0 33%;
   margin: auto;
   font-weight: 700;
@@ -55,7 +55,7 @@ div.top-header span img {
   margin: 0 5px;
 }
 
-div.top-header > img {
+div.top-header>img {
   width: 30px;
   margin-right: 5px;
 }
@@ -70,16 +70,16 @@ div.header div:nth-child(2) img {
   width: 22px;
 }
 
-div.header div:nth-child(2) > div {
+div.header div:nth-child(2)>div {
   flex: 0 0 33%;
 }
 
-div.header div:nth-child(2) > span {
+div.header div:nth-child(2)>span {
   text-align: right;
   flex: 0 0 27%;
 }
 
-div.header div:nth-child(2) > span img {
+div.header div:nth-child(2)>span img {
   margin-left: 5px;
 }
 
@@ -111,25 +111,26 @@ div.user {
 div.user p {
   margin: 0;
 }
+
 div.avatar {
   width: 53px;
   height: 53px;
   border-radius: 53px;
   margin: 0 6px 0 0;
 }
+
 div.avatar,
 div.user-dp {
   background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
+  background: radial-gradient(circle at 30% 107%,
     #fdf497 0%,
     #fdf497 5%,
     #fd5949 45%,
     #d6249f 60%,
-    #285aeb 90%
-  );
+    #285aeb 90%);
   text-align: center;
 }
+
 div.avatar img {
   margin: 3px 0;
   border-radius: 43px;
@@ -137,22 +138,27 @@ div.avatar img {
   width: 43px;
   height: 43px;
 }
+
 p#username {
   font-size: 0.9rem;
   font-weight: 700;
 }
+
 p.post-title {
   font-size: 0.85rem;
   font-weight: 600;
 }
+
 div.content-body {
   width: 100%;
   height: 43vh;
 }
+
 div.content-body img {
   width: 100%;
   height: 100%;
 }
+
 div.action {
   display: flex;
   justify-content: space-between;
@@ -160,37 +166,47 @@ div.action {
   margin: 7px 0;
   padding: 0 5px;
 }
+
 div.action span img {
   margin: 0 5px;
 }
+
 div.action img {
   width: 24px;
   height: 24px;
 }
+
 div.post-response {
   padding: 0 10px;
 }
+
 div.post-response p {
   margin: 2px 0;
 }
+
 b#likes {
   font-size: 0.8rem;
   font-weight: 800;
 }
+
 p#comment {
   font-size: 0.8rem;
 }
+
 p#comment a {
   text-decoration: none;
   color: #283d76;
 }
+
 p#timeline {
   font-size: 0.6rem;
   color: #bbb;
 }
+
 p#timeline b {
   color: #000;
 }
+
 div.footer {
   height: 8vh;
   position: absolute;
@@ -202,15 +218,18 @@ div.footer {
   justify-content: space-between;
   align-items: center;
 }
+
 div.footer img {
   width: 30px;
 }
+
 /* ********************************
     SECOND FRAME DESIGNS
 ******************************** */
 div#users-page div {
   flex: 0 0 10%;
 }
+
 div#users-page p {
   flex: 0 0 80%;
   text-align: center;
@@ -218,14 +237,32 @@ div#users-page p {
   font-weight: 800;
   margin: 0 auto;
 }
+
 div#users-page img {
   width: 15px;
 }
+
+#user-header {
+  padding: 10px 5px;
+}
+
+#user-profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.user-image {
+  width: 30%;
+}
+
 .user-dp {
   width: 90px;
   height: 90px;
   border-radius: 90px;
+  margin: 0 1px;
 }
+
 div.user-dp img {
   width: 80px;
   height: 80px;
@@ -233,6 +270,54 @@ div.user-dp img {
   border: 2.8px solid #fff;
   margin: 3px 0;
 }
+
+div.user-history {
+  padding: 0 0 0 5%;
+  width: inherit;
+}
+
+div.followers {
+  display: flex;
+  justify-content: center;
+}
+
+div.followers span {
+  margin: 0 5%;
+}
+
+p.counter {
+  text-align: center;
+  font-weight: 800;
+}
+
+p.count-item {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+div.follow {
+  margin: 5px 0;
+}
+
+button#more-options,
+button#follow-btn {
+  background: #3796F0;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+button#follow-btn {
+  padding: 5px 30%;
+}
+
+button#more-options {
+  padding: 5px 5%;
+}
+
 /* ********************************
           MEDIA QUERIES
 ******************************** */
@@ -242,17 +327,20 @@ div.user-dp img {
     display: flex;
     flex-wrap: wrap;
   }
+
   .frame {
     flex: 0 0 42%;
     margin: 20px;
   }
 }
+
 @media (min-width: 1000px) {
   body {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
   }
+
   .frame {
     flex: 0 0 30%;
     margin: 10px 5px;
