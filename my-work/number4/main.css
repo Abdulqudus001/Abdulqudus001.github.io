@@ -356,6 +356,7 @@ div.divider-v::before {
   display: block;
   height: 33px;
   background: #DDD;
+  margin-top: -20px;
 }
 
 div.post-image,
@@ -390,6 +391,15 @@ div.ig-tv svg {
   left: 17px;
   width: 25px;
   text-align: center;
+}
+
+div.divider-h::before {
+  content: '';
+  width: 300px;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  background: #DDD;
 }
 
 /* ********************************
