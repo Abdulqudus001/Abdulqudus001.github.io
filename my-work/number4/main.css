@@ -193,7 +193,8 @@ p#comment {
   font-size: 0.8rem;
 }
 
-p#comment a {
+p#comment a,
+div.bio a {
   text-decoration: none;
   color: #283d76;
 }
@@ -311,11 +312,22 @@ button#follow-btn {
 }
 
 button#follow-btn {
-  padding: 5px 30%;
+  padding: 8px 30%;
 }
 
 button#more-options {
-  padding: 5px 5%;
+  padding: 8px 5%;
+}
+
+div.bio {
+  padding: 0 15px;
+}
+
+div.bio p,
+div.bio a {
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 600;
 }
 
 /* ********************************
