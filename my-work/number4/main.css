@@ -11,7 +11,7 @@ body {
 
 .frame {
   width: 100vw;
-  height: 100vh;
+  height: 96vh;
   background: #fff;
   position: relative;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
@@ -83,7 +83,7 @@ div.header div:nth-child(2) > span img {
   margin-left: 5px;
 }
 
-div.header div:nth-child(2) p {
+.instagram {
   flex: 0 0 40%;
   text-align: center;
   font-family: "Billabong";
@@ -111,11 +111,14 @@ div.user {
 div.user p {
   margin: 0;
 }
-
 div.avatar {
   width: 53px;
   height: 53px;
   border-radius: 53px;
+  margin: 0 6px 0 0;
+}
+div.avatar,
+div.user-dp {
   background: #d6249f;
   background: radial-gradient(
     circle at 30% 107%,
@@ -125,7 +128,6 @@ div.avatar {
     #d6249f 60%,
     #285aeb 90%
   );
-  margin: 0 6px 0 0;
   text-align: center;
 }
 div.avatar img {
@@ -145,7 +147,7 @@ p.post-title {
 }
 div.content-body {
   width: 100%;
-  height: 46vh;
+  height: 43vh;
 }
 div.content-body img {
   width: 100%;
@@ -203,6 +205,37 @@ div.footer {
 div.footer img {
   width: 30px;
 }
+/* ********************************
+    SECOND FRAME DESIGNS
+******************************** */
+div#users-page div {
+  flex: 0 0 10%;
+}
+div#users-page p {
+  flex: 0 0 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0 auto;
+}
+div#users-page img {
+  width: 15px;
+}
+.user-dp {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+}
+div.user-dp img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  border: 2.8px solid #fff;
+  margin: 3px 0;
+}
+/* ********************************
+          MEDIA QUERIES
+******************************** */
 @media (min-width: 600px) {
   body {
     justify-content: space-around;
