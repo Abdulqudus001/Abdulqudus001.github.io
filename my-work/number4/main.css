@@ -77,6 +77,8 @@ div.header div:nth-child(2)>div {
 div.header div:nth-child(2)>span {
   text-align: right;
   flex: 0 0 27%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 div.header div:nth-child(2)>span img {
@@ -121,7 +123,8 @@ div.avatar {
 
 div.avatar,
 div.user-dp,
-div.user-story-image {
+div.user-story-image,
+#colored-tv {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%,
     #fdf497 0%,
@@ -440,10 +443,56 @@ div.photos img {
 /* ********************************
           THIRD FRAME
 ******************************** */
+#colored-tv,
+#colored-msg {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  text-align: center;
+  position: relative;
+  margin: 0 5px;
+}
+
+#colored-tv img {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+#colored-msg {
+  background: radial-gradient(circle at 30% 107%,
+    #53C7F8 0%,
+    #53C7F8 5%,
+    #61BEFF 45%,
+    #56A5FF 60%,
+    #2C7DF0 90%);
+  padding: 0 !important;
+}
+
+div#msg_no {
+  width: 17px;
+  height: 17px;
+  border-radius: 17px;
+  font-size: 0.7rem;
+  border: 1px solid #53C7F8;
+  color: #53C7F8;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 0 !important;
+  background: #FFF;
+}
+
+div#msg_no p {
+  text-align: center;
+  margin: 0 auto;
+  width: 5px;
+}
+
 div.users-status {
   background: #fafafa;
   width: 100vw;
-  height: 80px;
+  height: 100px;
   display: flex;
   align-items: center;
   padding: 10px 15px;
