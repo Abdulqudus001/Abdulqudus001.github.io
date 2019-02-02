@@ -18,7 +18,7 @@ div.top {
   position: sticky;
 }
 
-div.top > span.shapes {
+div.top>span.shapes {
   float: right;
   display: flex;
   width: 60px;
@@ -27,17 +27,17 @@ div.top > span.shapes {
   align-items: center;
 }
 
-div.top > span.shapes div:not(.triangle) {
+div.top>span.shapes div:not(.triangle) {
   width: 13px;
   height: 13px;
   background: #82929a;
 }
 
-div.top > span.shapes div.circle {
+div.top>span.shapes div.circle {
   border-radius: 13px;
 }
 
-div.top > span.shapes div.triangle {
+div.top>span.shapes div.triangle {
   width: 0;
   height: 0;
   border-top: 13px solid #82929a;
@@ -63,8 +63,8 @@ div.dummy {
 
 div.content .card {
   background: #fefefe;
-  width: 92%;
-  margin: 2% 1%;
+  width: 93.5%;
+  margin: 1% 1%;
   padding: 20px 10px;
 }
 
@@ -89,7 +89,7 @@ p.header {
 p.title {
   color: #223035;
   font-size: 1.3rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 div.avatar {
@@ -165,7 +165,7 @@ div.header {
   flex-direction: column;
 }
 
-.reunion > p {
+.reunion>p {
   margin: 15px 0;
   color: #808a8f;
   font-weight: 600;
@@ -181,8 +181,8 @@ div.header {
 }
 
 #reunion-header p {
-  font-size: 1.7rem;
-  line-height: 2.2rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   font-weight: 700;
   color: #223035;
   width: 70%;
@@ -266,7 +266,7 @@ div.footer div:not(.semi-circle) {
 }
 
 div.semi-circle {
-  width: 60px;
+  width: 62px;
   position: relative;
   overflow: hidden;
   background: transparent;
