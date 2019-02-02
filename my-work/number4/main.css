@@ -577,6 +577,13 @@ div.circle.colored {
   background: #4392F1;
 }
 
+#follows {
+  position: absolute;
+  width: 100px;
+  right: 18%;
+  top: -50px
+}
+
 /* ********************************
           MEDIA QUERIES
 ******************************** */
