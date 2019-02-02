@@ -225,6 +225,11 @@ div.footer img {
   width: 30px;
 }
 
+div.dummy {
+  height: 20px;
+  width: 100%;
+}
+
 /* ********************************
     SECOND FRAME DESIGNS
 ******************************** */
@@ -280,7 +285,7 @@ div.user-dp img {
 }
 
 div.user-history {
-  padding: 0 0 0 5%;
+  padding: 0 0 0 8%;
   width: inherit;
 }
 
@@ -416,8 +421,8 @@ div.photo-options {
 }
 
 div.photo-options img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 div.photos {
@@ -446,6 +451,16 @@ div.users-status {
   overflow-y: hidden;
 }
 
+div.user-story p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 2px 0;
+}
+
+div.user-story.mine p {
+  color: #CCC;
+}
+
 div#your-story {
   background: #CCC;
 }
@@ -470,7 +485,7 @@ div#your-story img {
 
 div#your-story img {
   margin-top: 2px;
-  border: 3.5px solid #FFF;
+  border: 3px solid #FFF;
 }
 
 div.add-comment {

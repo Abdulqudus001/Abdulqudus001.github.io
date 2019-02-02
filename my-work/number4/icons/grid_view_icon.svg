@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <path id="grid_view_icon" data-name="grid view icon" d="M115,748H72a1,1,0,0,0-1,1v43a1,1,0,0,0,1,1h43a1,1,0,0,0,1-1V749A1,1,0,0,0,115,748ZM85,790H74V779H85Zm0-14H74V765H85Zm0-14H74V751H85Zm14,28H88V779H99Zm0-14H88V765H99Zm0-14H88V751H99Zm14,28H102V779h11Zm0-14H102V765h11Zm0-14H102V751h11Z" transform="translate(-71 -748)" fill="#5395ea"/>
+</svg>
