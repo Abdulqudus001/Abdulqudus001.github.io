@@ -184,7 +184,7 @@ div.header {
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-weight: 700;
-  color: #223035;
+  color: #3f5061;
   width: 70%;
 }
 
@@ -256,6 +256,36 @@ div.fab img {
   position: relative;
   top: 13px;
 }
+
+div.fab i {
+  font-size: 20px;
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+}
+
+div.rect1,
+div.rect2 {
+  display: flex;
+  align-items: center;
+}
+
+div.rect2 {
+  justify-content: flex-end;
+}
+
+div.rect1 i,
+div.rect2 i {
+  color: #FFF;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+i.fas.fa-star:hover {
+  color: #faab1a;
+}
+
 
 div.footer div:not(.semi-circle) {
   width: 42%;
