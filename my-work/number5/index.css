@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.frame {
+  width: 100vw;
+  height: 90vh;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+/* ********************************
+          MEDIA QUERIES
+******************************** */
+@media (min-width: 600px) {
+  .frame {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .frame {
+    width: 60vw;
+  }
+}
