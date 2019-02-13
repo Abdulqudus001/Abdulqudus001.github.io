@@ -17,6 +17,17 @@ body {
   background: linear-gradient(135deg, #9A5BD8 0%, #FF9769 100%);
 }
 
+div.calculator {
+  position: relative;
+  top: 10%;
+  background: #fbfbfb;
+  width: 40%;
+  height: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* ********************************
           MEDIA QUERIES
 ******************************** */
