@@ -19,13 +19,26 @@ body {
 
 div.calculator {
   position: relative;
-  top: 10%;
+  top: 15%;
   background: #fbfbfb;
-  width: 40%;
-  height: 80%;
+  width: 35%;
+  height: 70%;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem 0;
+}
+
+div.menu {
+  display: flex;
+}
+
+div.black-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #CED3E2;
+  margin: 3px;
 }
 
 /* ********************************
