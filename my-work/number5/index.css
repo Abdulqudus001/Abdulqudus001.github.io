@@ -13,6 +13,10 @@ body {
   margin: 20px auto;
 }
 
+.frame1 {
+  background: linear-gradient(135deg, #9A5BD8 0%, #FF9769 100%);
+}
+
 /* ********************************
           MEDIA QUERIES
 ******************************** */
