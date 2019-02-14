@@ -76,9 +76,10 @@ div.number-grid {
 
 div.grid-item {
   text-align: center;
-  line-height: 300%;
+  line-height: 3.4rem;
   border-right: 1px solid #b1aeb3;
   border-top: 1px solid #DECFE4;
+  font-size: 1.5rem;
 }
 
 div.grid-item.item-col-2 {
@@ -102,6 +103,7 @@ div.sign-grid {
 
 div.grid-item.last {
   border-right: none;
+  font-size: 1.3rem;
 }
 
 /* ********************************
@@ -117,7 +119,13 @@ div.grid-item.last {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
+  .frame {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1200px) {
   .frame {
     width: 60vw;
   }
