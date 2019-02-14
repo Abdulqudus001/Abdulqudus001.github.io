@@ -46,28 +46,62 @@ div.black-circle {
   margin: 3px;
 }
 
+div.screen p {
+  text-align: right;
+  margin: 3px 0;
+}
+
+p#previous {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ced3e2;
+}
+
+p#current {
+  font-size: 3.0rem;
+}
+
 div.number-pad {
-  height: 70%;
   background: #f5edff;
   border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: 75% 25%;
 }
 
 div.number-grid {
   display: grid;
-  grid-gap: 1px;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 3.4rem 3.4rem 3.4rem 3.4rem 3.4rem;
+  grid-template-columns: 33.333% 33.333% 33.333%;
+  grid-template-rows: 3.48rem 3.48rem 3.48rem 3.48rem 3.48rem;
 }
 
 div.grid-item {
   text-align: center;
   line-height: 300%;
+  border-right: 1px solid #b1aeb3;
+  border-top: 1px solid #DECFE4;
 }
 
 div.grid-item.item-col-2 {
   grid-column: 1 / span 2;
   text-align: left;
   padding-left: 20%;
+}
+
+div.grid-item.dark {
+  background: #f5e1fd;
+}
+
+div.sign-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3.48rem;
+  background: linear-gradient(180deg, #F6D361 0%, #FF9C66 100%);
+  border-bottom-right-radius: 10px;
+  color: #FFF;
+}
+
+div.grid-item.last {
+  border-right: none;
 }
 
 /* ********************************
@@ -77,6 +111,7 @@ div.grid-item.item-col-2 {
   .frame {
     width: 80vw;
   }
+
   div.calculator {
     width: 40%;
   }
@@ -86,6 +121,7 @@ div.grid-item.item-col-2 {
   .frame {
     width: 60vw;
   }
+
   div.calculator {
     width: 35%;
   }
