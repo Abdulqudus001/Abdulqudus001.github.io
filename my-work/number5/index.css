@@ -146,8 +146,9 @@ div.yellow-circle {
 div.green-circle {
   background: #29cc41;
 }
-p#previous#small--text {
-  font-size: 0.8rem;
+p#previous.small--text {
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 div.number-pad.font-smaller {
@@ -166,12 +167,10 @@ div.number-grid.background--white > .grid-item {
 div.sign-grid.background--white {
   color: #3498db;
   font-size: 0.8rem;
-  /* font-weight: 600; */
 }
 
 div.number-grid.background--white {
   color: #8697a5;
-  /* font-weight: 600; */
 }
 
 div.background--white,
@@ -181,6 +180,53 @@ div.grid-item.no-border.dark {
 
 div.grid-item.item-col-2.center {
   padding-left: 72%;
+}
+
+/* ********************************
+          THIRD FRAME STYLES
+******************************** */
+
+.frame3 {
+  background: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+}
+
+.background-circle.large {
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+}
+
+.circle--blue {
+  top: -150px;
+  left: -150px;
+  background: linear-gradient(135deg, #5fc5ff 0%, #468dfe 100%);
+}
+
+.circle--green {
+  bottom: -150px;
+  right: -150px;
+  background: linear-gradient(135deg, #4af9cb 0%, #39f3c1 100%);
+}
+
+.circle--yellow {
+  top: -140px;
+  right: -140px;
+  background: #ffcb89;
+}
+
+.circle--red {
+  bottom: -140px;
+  left: -140px;
+  background: #ff6a85;
 }
 
 /* ********************************
