@@ -50,13 +50,13 @@ div.screen p {
   margin: 3px 0;
 }
 
-p#previous {
+p.previous {
   font-size: 1.2rem;
   font-weight: 400;
   color: #ced3e2;
 }
 
-p#current {
+p.current {
   font-size: 3rem;
 }
 
@@ -192,6 +192,14 @@ div.grid-item.item-col-2.center {
   overflow: hidden;
 }
 
+div.calculator.calc3 {
+  border-radius: 15px;
+  height: 85%;
+  top: 7%;
+  color: #838282;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
 .background-circle {
   position: absolute;
   width: 300px;
@@ -227,6 +235,49 @@ div.grid-item.item-col-2.center {
   bottom: -140px;
   left: -140px;
   background: #ff6a85;
+}
+
+div.screen.screen--calc3 {
+  padding-top: 3.5rem;
+  height: 25%;
+}
+
+div.screen.screen--calc3 p.previous,
+div.screen.screen--calc3 p.current {
+  color: #838282;
+}
+
+div#third--calc {
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 0 10px;
+}
+
+div#third--calc .equals--btn {
+  grid-column: 3 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+div.equal-to {
+  border-radius: 30px;
+  background: #ffcb8a;
+  box-shadow: 0 4px 10px 0 rgba(255, 203, 138, 0.5);
+  width: 80%;
+  height: 80%;
+  margin-right: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.grid-item .background--circle {
+  background: #f3f3f3;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  margin: 0 auto;
+  line-height: 3.1rem;
 }
 
 /* ********************************
