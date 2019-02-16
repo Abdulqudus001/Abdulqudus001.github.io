@@ -40,10 +40,10 @@ window.addEventListener('load', () => {
 
   signs.forEach(sign => {
     sign.addEventListener('click', () => {
-      nums.push(numberToBeAdded);
+
+      console.log(nums)
       if (sign.id != 'equals') {
         if (nums.length > 1) {
-          result = performOperation(sign.id, nums);
           nums = [];
           nums.push(result);
         }
@@ -62,6 +62,11 @@ window.addEventListener('load', () => {
         currentText.innerHTML = typedNumber;
         if (number.classList.value.indexOf('last') < 0) {
           numberToBeAdded += number.innerHTML;
+          nums.push(numberToBeAdded);
+          if (nums.length > 1) {
+            result = performOperation(lastSign, nums);
+          }
+          console.log(lastSign, result)
         }
       }
     });
@@ -71,7 +76,7 @@ window.addEventListener('load', () => {
     let finalResult = performOperation(lastSign, nums);
     previousText.innerHTML = typedNumber;
     typedNumber = finalResult;
-    nums = [];
+    nums = [finalResult];
     currentText.innerHTML = finalResult;
     numberToBeAdded = finalResult;
   });
