@@ -1,3 +1,24 @@
+function performOperation(id, nums) {
+  let result;
+  switch (id) {
+    case 'add':
+      result = parseFloat(nums[0]) + parseFloat(nums[1])
+      break;
+    case 'subtract':
+      result = parseFloat(nums[0]) - parseFloat(nums[1])
+      break;
+    case 'divide':
+      result = parseFloat(nums[0]) / parseFloat(nums[1])
+      break;
+    case 'product':
+      result = parseFloat(nums[0]) * parseFloat(nums[1])
+      break;
+    default:
+      break;
+  }
+  return result;
+}
+
 window.addEventListener('load', () => {
   let previousText = document.getElementById('previous');
   let currentText = document.getElementById('current');
@@ -12,27 +33,47 @@ window.addEventListener('load', () => {
   let equals = document.getElementById('equals');
   let percentage = document.getElementById('percentage');
 
+  let nums = [];
+  let numberToBeAdded = '';
+  let result = '';
+  let lastSign = '';
+
   signs.forEach(sign => {
     sign.addEventListener('click', () => {
-      console.log(sign.innerHTML)
+      nums.push(numberToBeAdded);
+      if (sign.id != 'equals') {
+        if (nums.length > 1) {
+          result = performOperation(sign.id, nums);
+          nums = [];
+          nums.push(result);
+        }
+        lastSign = sign.id;
+        numberToBeAdded = '';
+      }
     });
   });
-
-  equals.addEventListener('click', () => {
-    previousText.innerHTML = currentText.innerHTML;
-    currentText.innerHTML = eval(typedNumber);
-    typedNumber = '';
-  })
 
   // Modifiy content of screen on number press
   let typedNumber = '';
   numbers.forEach(number => {
     number.addEventListener('click', () => {
-      if (number.classList.value.indexOf('last') < 0) {
+      if (number.id != 'equals') {
         typedNumber += number.innerHTML;
         currentText.innerHTML = typedNumber;
+        if (number.classList.value.indexOf('last') < 0) {
+          numberToBeAdded += number.innerHTML;
+        }
       }
     });
+  });
+
+  equals.addEventListener('click', () => {
+    let finalResult = performOperation(lastSign, nums);
+    previousText.innerHTML = typedNumber;
+    typedNumber = finalResult;
+    nums = [];
+    currentText.innerHTML = finalResult;
+    numberToBeAdded = finalResult;
   });
 
   // Clear screen on 'C' btn press
@@ -40,5 +81,7 @@ window.addEventListener('load', () => {
     previousText.innerHTML = '0';
     currentText.innerHTML = '0';
     typedNumber = '';
+    nums = [];
+    numberToBeAdded = '';
   })
 });
