@@ -32,6 +32,7 @@ div.calculator {
 div.screen {
   height: 30%;
   padding: 1rem 1rem 0;
+  overflow-x: auto;
 }
 
 div.menu {
@@ -80,6 +81,7 @@ div.grid-item {
   border-right: 1px solid #b1aeb3;
   border-top: 1px solid #decfe4;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 div.grid-item.item-col-2 {

@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet" />
+  <script src="./calculate.js"></script>
 </head>
 
 <body>
@@ -19,14 +20,14 @@
           <div class="black-circle"></div>
           <div class="black-circle"></div>
         </div>
-        <p class="previous">65 x 84</p>
-        <p class="current">5460</p>
+        <p id="previous" class="previous">65 x 84</p>
+        <p id="current" class="current">5460</p>
       </div>
       <div class="number-pad">
         <div class="number-grid">
-          <div class="grid-item dark">C</div>
-          <div class="grid-item dark">+</div>
-          <div class="grid-item dark">%</div>
+          <div id="clear" class="grid-item dark">C</div>
+          <div id="negate" class="grid-item dark">+/-</div>
+          <div id="percentage" class="grid-item dark">%</div>
 
           <div class="grid-item">7</div>
           <div class="grid-item">8</div>
@@ -43,11 +44,11 @@
           <div class="grid-item">.</div>
         </div>
         <div class="sign-grid">
-          <div class="grid-item last">/</div>
-          <div class="grid-item last">x</div>
-          <div class="grid-item last">-</div>
-          <div class="grid-item last">+</div>
-          <div class="grid-item last">=</div>
+          <div id="divide" class="grid-item last">/</div>
+          <div id="product" class="grid-item last">x</div>
+          <div id="subtract" class="grid-item last">-</div>
+          <div id="add" class="grid-item last">+</div>
+          <div id="equals" class="grid-item last">=</div>
         </div>
       </div>
     </div>
