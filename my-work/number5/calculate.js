@@ -40,8 +40,6 @@ window.addEventListener('load', () => {
 
   signs.forEach(sign => {
     sign.addEventListener('click', () => {
-
-      console.log(nums)
       if (sign.id != 'equals') {
         if (nums.length > 1) {
           nums = [];
@@ -66,7 +64,6 @@ window.addEventListener('load', () => {
           if (nums.length > 1) {
             result = performOperation(lastSign, nums);
           }
-          console.log(lastSign, result)
         }
       }
     });

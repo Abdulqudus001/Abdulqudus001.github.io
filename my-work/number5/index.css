@@ -203,38 +203,38 @@ div.calculator.calc3 {
 
 .background-circle {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 50vw;
+  height: 50vw;
   border-radius: 300px;
 }
 
 .background-circle.large {
-  width: 500px;
-  height: 500px;
-  border-radius: 500px;
+  width: 80vw;
+  height: 80vw;
+  border-radius: 100%;
 }
 
 .circle--blue {
-  top: -150px;
-  left: -150px;
+  top: -10vh;
+  left: -10vh;
   background: linear-gradient(135deg, #5fc5ff 0%, #468dfe 100%);
 }
 
 .circle--green {
-  bottom: -150px;
-  right: -150px;
+  bottom: -10vh;
+  right: -10vh;
   background: linear-gradient(135deg, #4af9cb 0%, #39f3c1 100%);
 }
 
 .circle--yellow {
-  top: -140px;
-  right: -140px;
+  top: -14vh;
+  right: -14vh;
   background: #ffcb89;
 }
 
 .circle--red {
-  bottom: -140px;
-  left: -140px;
+  bottom: -14vh;
+  left: -14vh;
   background: #ff6a85;
 }
 
@@ -294,6 +294,11 @@ div.grid-item .background--circle {
   div.calculator {
     width: 60%;
   }
+
+  .background-circle.large {
+    width: 70vw;
+    height: 70vw;
+  }
 }
 
 @media (min-width: 520px) {
@@ -310,11 +315,49 @@ div.grid-item .background--circle {
   div.calculator {
     width: 55%;
   }
+
+  .circle--blue {
+    top: -27vh;
+    left: -27vh;
+  }
+
+  .circle--green {
+    bottom: -27vh;
+    right: -27vh;
+  }
+  .circle--yellow {
+    top: -24vh;
+    right: -24vh;
+  }
+
+  .circle--red {
+    bottom: -24vh;
+    left: -24vh;
+  }
 }
 
 @media (min-width: 760px) {
   div.calculator {
     width: 50%;
+  }
+  .circle--blue {
+    top: -37vh;
+    left: -37vh;
+  }
+
+  .circle--green {
+    bottom: -37vh;
+    right: -37vh;
+  }
+
+  .circle--yellow {
+    top: -35vh;
+    right: -35vh;
+  }
+
+  .circle--red {
+    bottom: -35vh;
+    left: -35vh;
   }
 }
 
@@ -325,6 +368,80 @@ div.grid-item .background--circle {
   div.calculator {
     width: 45%;
   }
+
+  .background-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .background-circle.large {
+    width: 600px;
+    height: 600px;
+  }
+
+  .circle--blue {
+    top: -150px;
+    left: -150px;
+  }
+
+  .circle--green {
+    bottom: -150px;
+    right: -150px;
+  }
+
+  .circle--yellow {
+    top: -140px;
+    right: -140px;
+  }
+
+  .circle--red {
+    bottom: -140px;
+    left: -140px;
+  }
+}
+
+@media (min-width: 980px) {
+  .circle--blue {
+    top: -52vh;
+    left: -52vh;
+  }
+
+  .circle--green {
+    bottom: -52vh;
+    right: -52vh;
+  }
+
+  .circle--yellow {
+    top: -45vh;
+    right: -45vh;
+  }
+
+  .circle--red {
+    bottom: -45vh;
+    left: -45vh;
+  }
+}
+
+@media (min-width: 1050px) {
+  .circle--blue {
+    top: -59vh;
+    left: -59vh;
+  }
+
+  .circle--green {
+    bottom: -59vh;
+    right: -59vh;
+  }
+
+  .circle--yellow {
+    top: -50vh;
+    right: -50vh;
+  }
+
+  .circle--red {
+    bottom: -50vh;
+    left: -50vh;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -334,5 +451,35 @@ div.grid-item .background--circle {
 
   div.calculator {
     width: 35%;
+  }
+
+  .background-circle {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .background-circle.large {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .circle--blue {
+    top: -49vh;
+    left: -49vh;
+  }
+
+  .circle--green {
+    bottom: -49vh;
+    right: -49vh;
+  }
+
+  .circle--yellow {
+    top: -40vh;
+    right: -40vh;
+  }
+
+  .circle--red {
+    bottom: -40vh;
+    left: -40vh;
   }
 }
