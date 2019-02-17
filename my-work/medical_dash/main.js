@@ -12,7 +12,7 @@ function closeNav() {
   document.getElementById('sidenav-content').style.width = '0';
 }
 
-let sidebarLinks = document.querySelectorAll('.selected-sidebar');
+let sidebarLinks = document.querySelectorAll('.selected-navmenu');
 let lines = document.querySelectorAll('.hidden-line');
 
 sidebarLinks.forEach(link => {
