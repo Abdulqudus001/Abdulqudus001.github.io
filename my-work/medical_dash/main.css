@@ -123,6 +123,11 @@ a#create-documentation {
   transition: 0.5s;
 }
 
+div.sidebar {
+  display: flex;
+  justify-content: space-between;
+}
+
 div.sidebar-nav {
   background: #FFF;
   position: relative;
@@ -147,12 +152,64 @@ div.sidebar-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  align-items: center;
 }
 
 .top-icons {
+  width: 100%;
   padding-top: 20px;
   height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.top-icons div {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+
+.top-icons hr {
+  height: 40px;
+  width: 4px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background: #2BE1CB;
+  margin: 0;
+  border-radius: 0 40px 40px 0;
+}
+
+.last-icon {
+  position: absolute;
+  bottom: 1.7rem;
+}
+
+.sidenav-content {
+  padding: 10px;
+}
+
+.sidenav-content span.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidenav-content span.header>p:first-child {
+  font-size: 1.5rem;
+  color: #434B65;
+  line-height: 40px;
+  margin: 0;
+}
+
+.sidenav-content span.header :last-child {
+  display: flex;
+  align-items: flex-end;
+  color: #9AA6CE;
+  padding-bottom: 4px;
+}
+
+.sidenav-content span.header :last-child p {
+  margin: 0 6px;
 }

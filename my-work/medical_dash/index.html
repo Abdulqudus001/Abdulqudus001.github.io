@@ -53,14 +53,29 @@
           <img src="./icons/aspen.svg" alt="">
           <i class="fa fa-close closebtn" onclick="closeNav()"></i>
         </div>
+      </div>
+      <div class="sidebar">
         <div id="sidenav-sidemenu" class="sidenav-sidemenu">
           <div class="top-icons">
             <img src="./icons/calendar.svg" alt="">
-            <img src="./icons/group.svg" alt="">
+            <div class="selected-sidebar">
+              <hr width="1" size="500">
+              <img src="./icons/group.svg" alt="">
+            </div>
             <img src="./icons/message.svg" alt="">
             <img src="./icons/bell.svg" alt="">
           </div>
-          <img src="./icons/arrow.svg" alt="">
+          <img class="last-icon" src="./icons/arrow.svg" alt="">
+        </div>
+        <div id="sidenav-content" class="sidenav-content">
+          <span class="header">
+            <p>Patients</p>
+            <div class="recent">
+              <p>Recent</p>
+              <i class="fa fa-caret-down"></i>
+            </div>
+          </span>
+          <div class="patient"></div>
         </div>
       </div>
     </div>
