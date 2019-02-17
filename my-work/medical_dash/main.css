@@ -14,7 +14,8 @@ div.mobile-nav {
   width: 100%;
 }
 
-div.navbar {
+div.navbar,
+div.sidebar-nav {
   width: 100%;
   height: 10vh;
   box-shadow: 0px 4.5px 18px rgba(0, 0, 0, 0.1);
@@ -68,7 +69,7 @@ div.user-profile-avatar {
   position: absolute;
   top: 10vh;
   right: -3px;
-  background-color: #f9f9f9;
+  background-color: #FFF;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -93,7 +94,7 @@ div.user-profile-avatar {
 
 a#create-documentation {
   background: linear-gradient(101.13deg, #F46B45 0%, #EEA849 100%);
-  border-radius: 4.5px;
+  border-radius: 4.5px 4.5px 0 0;
   width: 100%;
   justify-content: space-between;
   color: #FFF;
@@ -101,4 +102,57 @@ a#create-documentation {
 
 .dropdown-content a div {
   margin-left: 5px;
+}
+
+/********************************
+        SIDE NAV STYLES
+********************************/
+.sidenav {
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+}
+
+.sidenav-sidemenu,
+.sidenav {
+  width: 0;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+div.sidebar-nav {
+  background: #FFF;
+  position: relative;
+}
+
+.sidebar-nav-options {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sidenav .closebtn {
+  color: #0271EE;
+}
+
+.sidenav-sidemenu {
+  height: 90vh;
+  background: linear-gradient(180deg, #0072FF 0%, #00C6FF 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-icons {
+  padding-top: 20px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

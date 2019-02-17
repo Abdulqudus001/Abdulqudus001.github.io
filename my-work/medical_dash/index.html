@@ -11,14 +11,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
 
-  <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="navbar">
       <div class="mobile-nav">
-        <div class="toggle">
+        <div onclick="openNav()" class="toggle">
           <div></div>
           <div></div>
           <div></div>
@@ -48,7 +47,25 @@
         </div>
       </div>
     </div>
+    <div id="mySidenav" class="sidenav">
+      <div class="sidebar-nav">
+        <div class="sidebar-nav-options">
+          <img src="./icons/aspen.svg" alt="">
+          <i class="fa fa-close closebtn" onclick="closeNav()"></i>
+        </div>
+        <div id="sidenav-sidemenu" class="sidenav-sidemenu">
+          <div class="top-icons">
+            <img src="./icons/calendar.svg" alt="">
+            <img src="./icons/group.svg" alt="">
+            <img src="./icons/message.svg" alt="">
+            <img src="./icons/bell.svg" alt="">
+          </div>
+          <img src="./icons/arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
