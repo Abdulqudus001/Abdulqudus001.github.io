@@ -48,9 +48,57 @@ form .search::placeholder {
   font-size: 14.625px;
 }
 
+div.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #0271EE;
+}
+
 div.user-profile-avatar {
   width: 40px;
   height: 40px;
   border-radius: 40px;
   background: #A9B3D2;
+  margin-right: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  right: -3px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+  color: #A9B3D2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a#create-documentation {
+  background: linear-gradient(101.13deg, #F46B45 0%, #EEA849 100%);
+  border-radius: 4.5px;
+  width: 100%;
+  justify-content: space-between;
+  color: #FFF;
+}
+
+.dropdown-content a div {
+  margin-left: 5px;
 }
