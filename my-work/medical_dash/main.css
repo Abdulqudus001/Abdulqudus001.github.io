@@ -64,9 +64,9 @@ div.user-profile {
 }
 
 div.user-profile-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
   background: #A9B3D2;
   margin-right: 2px;
 }
