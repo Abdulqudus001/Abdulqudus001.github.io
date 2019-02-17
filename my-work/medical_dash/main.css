@@ -349,3 +349,49 @@ div.tiny-circle {
   background: #ADAEB4;
   margin: 0 7px;
 }
+
+div.navigation {
+  width: 100%;
+  border-bottom: 2px solid #A9B3D2;
+}
+
+div.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-x: auto;
+}
+
+div.links a {
+  font-size: 14.625px;
+  color: #008EFF;
+  text-decoration: none;
+}
+
+div.links div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+div.selected-sidebar hr {
+  width: 120%;
+  height: 4px;
+  border-radius: 10px 10px 0 0;
+  margin: 10px 0 0 0;
+  position: relative;
+  bottom: -2px;
+}
+
+hr.hidden-line {
+  background: none;
+  border: none;
+}
+
+hr.show-line {
+  background: #008EFF;
+}

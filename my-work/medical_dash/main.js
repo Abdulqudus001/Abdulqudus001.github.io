@@ -11,3 +11,17 @@ function closeNav() {
   document.getElementById('sidenav-sidemenu').style.width = '0';
   document.getElementById('sidenav-content').style.width = '0';
 }
+
+let sidebarLinks = document.querySelectorAll('.selected-sidebar');
+let lines = document.querySelectorAll('.hidden-line');
+
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    lines.forEach(item => {
+      if (item.classList.value.indexOf('show-line') > -1) {
+        item.classList.remove('show-line');
+      }
+    });
+    link.getElementsByTagName('hr')[0].classList.add('show-line');
+  });
+});
