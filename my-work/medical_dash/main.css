@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background: #F4F7FC;
 }
 
 div.container-fluid {
@@ -194,6 +195,7 @@ div.sidebar-nav {
 .sidenav-content span.header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10%;
 }
 
 .sidenav-content span.header>p:first-child {
@@ -212,4 +214,48 @@ div.sidebar-nav {
 
 .sidenav-content span.header :last-child p {
   margin: 0 6px;
+}
+
+div.patient {
+  display: flex;
+  align-items: center;
+}
+
+div.patient:hover {
+  background: #F4F7FC;
+  border-radius: 4.5px;
+}
+
+div.user-info {
+  margin-left: 10%;
+}
+
+.name-gender,
+.age-condition {
+  display: flex;
+  align-items: center;
+}
+
+.name-gender p,
+.age-condition p {
+  margin: 2px 0;
+}
+
+.name-gender p {
+  font-size: 15.75px;
+  margin-right: 5px;
+  color: #434B65;
+}
+
+.age-condition p {
+  font-size: 14.625px;
+  color: #ADAEB4;
+}
+
+.age-condition p:nth-child(2) {
+  position: relative;
+  top: -5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
 }
