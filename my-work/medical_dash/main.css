@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./fonts/HelveticaNeue\ Light.ttf')
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #F4F7FC;
+  font-family: 'Helvetica' !important;
 }
 
 div.container-fluid {
@@ -201,6 +207,7 @@ div.sidebar-nav {
 .sidenav-content span.header>p:first-child {
   font-size: 1.5rem;
   color: #434B65;
+  font-weight: 600;
   line-height: 40px;
   margin: 0;
 }
@@ -209,6 +216,7 @@ div.sidebar-nav {
   display: flex;
   align-items: flex-end;
   color: #9AA6CE;
+  font-weight: 600;
   padding-bottom: 4px;
 }
 
@@ -224,6 +232,20 @@ div.patient {
 div.patient:hover {
   background: #F4F7FC;
   border-radius: 4.5px;
+}
+
+div.patient .user-profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  background: linear-gradient(180deg, #A26FED 0%, #EE86BF 100%);
+}
+
+div.patient .user-profile-avatar p {
+  margin: 0;
+  font-size: 19.4252px;
+  font-weight: 900;
 }
 
 div.user-info {
@@ -256,6 +278,5 @@ div.user-info {
   position: relative;
   top: -5px;
   font-size: 20px;
-  font-weight: bold;
   margin: 0 5px;
 }
