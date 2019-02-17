@@ -130,7 +130,7 @@ div.macbook-circle {
   display: flex;
 }
 
-div.macbook-circle > div {
+div.macbook-circle>div {
   margin: 4px;
   width: 12.5px;
   height: 12.5px;
@@ -148,6 +148,7 @@ div.yellow-circle {
 div.green-circle {
   background: #29cc41;
 }
+
 p#previous.small--text {
   font-size: 0.7rem;
   font-weight: 600;
@@ -162,7 +163,7 @@ div.grid-item.no-border {
   border: none;
 }
 
-div.number-grid.background--white > .grid-item {
+div.number-grid.background--white>.grid-item {
   font-size: 1rem;
 }
 
@@ -295,15 +296,25 @@ div.grid-item .background--circle {
     width: 60%;
   }
 
+  .background-circle {
+    width: 50vw;
+    height: 50vw;
+  }
+
   .background-circle.large {
-    width: 70vw;
-    height: 70vw;
+    width: 60vw;
+    height: 60vw;
   }
 }
 
 @media (min-width: 520px) {
   div.calculator {
     width: 55%;
+  }
+
+  .background-circle {
+    width: 35vw;
+    height: 35vw;
   }
 }
 
@@ -316,131 +327,100 @@ div.grid-item .background--circle {
     width: 55%;
   }
 
-  .circle--blue {
-    top: -27vh;
-    left: -27vh;
+  .background-circle.large {
+    width: 50vw;
+    height: 50vw;
   }
 
-  .circle--green {
-    bottom: -27vh;
-    right: -27vh;
-  }
-  .circle--yellow {
-    top: -24vh;
-    right: -24vh;
-  }
-
-  .circle--red {
-    bottom: -24vh;
-    left: -24vh;
-  }
 }
 
 @media (min-width: 760px) {
   div.calculator {
     width: 50%;
   }
+
+  .background-circle {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .background-circle.large {
+    width: 45vw;
+    height: 45vw;
+  }
+
   .circle--blue {
-    top: -37vh;
-    left: -37vh;
+    top: -22vh;
+    left: -22vh;
   }
 
   .circle--green {
-    bottom: -37vh;
-    right: -37vh;
+    bottom: -22vh;
+    right: -22vh;
   }
 
   .circle--yellow {
-    top: -35vh;
-    right: -35vh;
+    top: -20vh;
+    right: -20vh;
   }
 
   .circle--red {
-    bottom: -35vh;
-    left: -35vh;
+    bottom: -20vh;
+    left: -20vh;
   }
+
 }
 
 @media (min-width: 900px) {
   .frame {
     width: 70vw;
   }
+
   div.calculator {
     width: 45%;
   }
 
   .background-circle {
-    width: 300px;
-    height: 300px;
+    width: 30vw;
+    height: 30vw;
   }
 
   .background-circle.large {
-    width: 600px;
-    height: 600px;
+    width: 42vw;
+    height: 42vw;
   }
 
-  .circle--blue {
-    top: -150px;
-    left: -150px;
-  }
-
-  .circle--green {
-    bottom: -150px;
-    right: -150px;
-  }
-
-  .circle--yellow {
-    top: -140px;
-    right: -140px;
-  }
-
-  .circle--red {
-    bottom: -140px;
-    left: -140px;
-  }
 }
 
 @media (min-width: 980px) {
+  .background-circle {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .background-circle.large {
+    width: 40vw;
+    height: 40vw;
+  }
+
   .circle--blue {
-    top: -52vh;
-    left: -52vh;
+    top: -20vh;
+    left: -20vh;
   }
 
   .circle--green {
-    bottom: -52vh;
-    right: -52vh;
+    bottom: -20vh;
+    right: -20vh;
   }
 
   .circle--yellow {
-    top: -45vh;
-    right: -45vh;
+    top: -18vh;
+    right: -18vh;
   }
 
   .circle--red {
-    bottom: -45vh;
-    left: -45vh;
-  }
-}
-
-@media (min-width: 1050px) {
-  .circle--blue {
-    top: -59vh;
-    left: -59vh;
-  }
-
-  .circle--green {
-    bottom: -59vh;
-    right: -59vh;
-  }
-
-  .circle--yellow {
-    top: -50vh;
-    right: -50vh;
-  }
-
-  .circle--red {
-    bottom: -50vh;
-    left: -50vh;
+    bottom: -18vh;
+    left: -18vh;
   }
 }
 
@@ -454,32 +434,44 @@ div.grid-item .background--circle {
   }
 
   .background-circle {
-    width: 45vw;
-    height: 45vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   .background-circle.large {
-    width: 70vw;
-    height: 70vw;
+    width: 35vw;
+    height: 35vw;
   }
 
   .circle--blue {
-    top: -49vh;
-    left: -49vh;
+    top: -16vh;
+    left: -16vh;
   }
 
   .circle--green {
-    bottom: -49vh;
-    right: -49vh;
+    bottom: -16vh;
+    right: -16vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .circle--blue {
+    top: -22vh;
+    left: -22vh;
+  }
+
+  .circle--green {
+    bottom: -22vh;
+    right: -22vh;
   }
 
   .circle--yellow {
-    top: -40vh;
-    right: -40vh;
+    top: -20vh;
+    right: -20vh;
   }
 
   .circle--red {
-    bottom: -40vh;
-    left: -40vh;
+    bottom: -20vh;
+    left: -20vh;
   }
 }
