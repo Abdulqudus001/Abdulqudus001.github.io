@@ -196,6 +196,8 @@ div.sidebar-nav {
 
 .sidenav-content {
   padding: 10px;
+  height: 90vh;
+  overflow-y: auto;
 }
 
 .sidenav-content span.header {
@@ -227,6 +229,8 @@ div.sidebar-nav {
 div.patient {
   display: flex;
   align-items: center;
+  margin: 20px 0;
+  padding: 0 5px;
 }
 
 div.patient:hover {
@@ -235,11 +239,30 @@ div.patient:hover {
 }
 
 div.patient .user-profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFF;
   background: linear-gradient(180deg, #A26FED 0%, #EE86BF 100%);
+}
+
+div#leen {
+  background: linear-gradient(180deg, #FB72AE 0%, #F25555 100%);
+}
+
+div#rowan {
+  background: linear-gradient(180deg, #B482D3 0%, #A2ACF1 100%);
+}
+
+div#allan {
+  background: linear-gradient(180deg, #FFB064 0%, #FFE35A 100%);
+}
+
+div#neil {
+  background: linear-gradient(180deg, #45BAF2 0%, #77EFD8 100%);
 }
 
 div.patient .user-profile-avatar p {
