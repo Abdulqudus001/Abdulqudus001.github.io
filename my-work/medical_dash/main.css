@@ -191,6 +191,7 @@ div.sidebar-nav {
   margin: 0;
   border-radius: 0 40px 40px 0;
 }
+
 /* 
 .last-icon {
   position: relative;
@@ -210,7 +211,7 @@ div.sidebar-nav {
   margin-bottom: 10%;
 }
 
-.sidenav-content span.header > p:first-child {
+.sidenav-content span.header>p:first-child {
   font-size: 1.5rem;
   color: #434b65;
   font-weight: 600;
@@ -510,8 +511,139 @@ div.condition img {
   top: 3px;
 }
 
-div.d-nosis > p {
+div.d-nosis>p {
   font-size: 13.5px;
   color: #adaeb4;
   margin-bottom: 0;
+}
+
+/*****************************
+   DOCUMENTATION SCREEN STYLE
+ ******************************/
+div.documentation {
+  padding: 20px 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 90vh;
+}
+
+div.documentation>div {
+  display: flex;
+}
+
+.doc-card {
+  position: relative;
+}
+
+/************************
+ Create a custom checkbox 
+************************/
+
+.wrapper {
+  position: relative;
+  width: 15%;
+}
+
+.wrapper input {
+  height: 22.5px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 22.5px;
+}
+
+.wrapper input+label::before {
+  border: 2.25043px solid #A9B3D2;
+  border-radius: 4.5px;
+  content: '';
+  height: 22.5px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 22.5px;
+}
+
+.wrapper input+label::after {
+  content: '';
+  border: 4px solid #A9B3D2;
+  border-left: 0;
+  border-top: 0;
+  height: 15px;
+  left: 6px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  transform: rotate(45deg);
+  transition: opacity 0.2s ease-in-out;
+  width: 9px;
+}
+
+.wrapper input:checked+label::after {
+  opacity: 1;
+}
+
+div.doc-card {
+  display: flex;
+  width: 100%;
+  padding: 25px 15px;
+  background: #FFF;
+  border-radius: 0 9px 9px 0;
+  margin: 15px 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+div.documentation>div>hr {
+  width: 5px;
+  height: auto;
+  position: relative;
+  left: 0;
+  z-index: 5;
+  border-radius: 9px 0 0 9px;
+}
+
+hr.blue-border-left {
+  background: #43ACFF;
+}
+
+hr.green-border-left {
+  background: #33CDBA;
+}
+
+div.doc-card.no-bg {
+  background: none;
+}
+
+div.doc-card.no-bg span {
+  font-size: 14.6278px;
+}
+
+div.doc-card span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16.8782px;
+  color: #A9B3D2;
+  width: 85%;
+}
+
+div.doc-card span p {
+  margin: 0 10px;
+}
+
+div.doc-card span p:first-child {
+  flex: 0 0 30%;
+}
+
+div.doc-card span p:nth-child(2) {
+  flex: 0 0 60%;
+}
+
+div.doc-card span p:nth-child(3) {
+  flex: 0 0 50%;
+}
+
+div.doc-card span p:last-child {
+  flex: 0 0 40%;
 }
