@@ -409,6 +409,10 @@ hr.show-line {
 *****************************/
 div.about-user {
   padding: 20px 30px;
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 p.p-contact {
@@ -591,8 +595,6 @@ div.doc-card {
   border-radius: 0 9px 9px 0;
   margin: 15px 0;
   white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 div.documentation>div>hr {
@@ -614,6 +616,8 @@ hr.green-border-left {
 
 div.doc-card.no-bg {
   background: none;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 div.doc-card.no-bg span {
@@ -626,10 +630,17 @@ div.doc-card span {
   font-size: 16.8782px;
   color: #A9B3D2;
   width: 85%;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 div.doc-card span p {
   margin: 0 10px;
+}
+
+div.doc-card span i {
+  margin-right: 10px;
 }
 
 div.doc-card span p:first-child {
@@ -637,7 +648,7 @@ div.doc-card span p:first-child {
 }
 
 div.doc-card span p:nth-child(2) {
-  flex: 0 0 60%;
+  flex: 0 0 70%;
 }
 
 div.doc-card span p:nth-child(3) {
