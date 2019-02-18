@@ -415,7 +415,7 @@ hr.show-line {
 *****************************/
 div.about-user {
   padding: 20px 30px;
-  height: 90vh;
+  height: 60vh;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 50px;
