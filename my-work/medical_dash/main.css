@@ -9,6 +9,11 @@ body {
   font-family: "Helvetica" !important;
 }
 
+div.dummy {
+  width: 100%;
+  height: 50px;
+}
+
 div.container-fluid {
   padding: 0;
   background: #f4f7fc;
