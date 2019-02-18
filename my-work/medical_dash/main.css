@@ -193,7 +193,7 @@ div.sidebar-nav {
 }
 
 .last-icon {
-  position: absolute;
+  position: relative;
   bottom: 1.7rem;
 }
 
