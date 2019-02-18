@@ -410,7 +410,7 @@ div.about-user {
   padding: 20px 30px;
 }
 
-p#p-contact {
+p.p-contact {
   font-size: 14.625px;
   color: #adaeb4;
   margin: 0 0 0 10%;
@@ -474,4 +474,44 @@ div.contacts-card p:last-child {
   margin: 0 auto;
   margin-top: 10px;
   width: 90%;
+}
+
+p.diag {
+  font-size: 14.625px;
+  color: #adaeb4;
+  margin: 0 0 0 2%;
+}
+
+div.diagnosis {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.d-nosis {
+  flex: 0 0 100%;
+  background: #fff;
+  border-radius: 9px;
+  padding: 1rem;
+  margin: 6px 0;
+}
+
+div.condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14.625px;
+  letter-spacing: 0.01em;
+  color: #434b65;
+}
+
+div.condition img {
+  position: relative;
+  top: 3px;
+}
+
+div.d-nosis > p {
+  font-size: 13.5px;
+  color: #adaeb4;
+  margin-bottom: 0;
 }
