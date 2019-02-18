@@ -328,6 +328,7 @@ div.selected-user {
   display: flex;
   align-items: center;
   padding: 15px 10px;
+  height: 15vh;
 }
 
 div.selected-user-image {
@@ -415,7 +416,7 @@ hr.show-line {
 *****************************/
 div.about-user {
   padding: 20px 30px;
-  height: 60vh;
+  height: 75vh;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 50px;
