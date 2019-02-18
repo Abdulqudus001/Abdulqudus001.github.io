@@ -201,7 +201,7 @@ div.sidebar-nav {
   padding: 10px;
   height: 90vh;
   overflow-y: auto;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .sidenav-content span.header {
@@ -294,6 +294,11 @@ div.user-info {
   font-size: 15.75px;
   margin-right: 5px;
   color: #434b65;
+}
+
+.name-gender img {
+  position: relative;
+  top: -2px;
 }
 
 .age-condition p {
@@ -396,4 +401,77 @@ hr.hidden-line {
 
 hr.show-line {
   background: #008eff;
+}
+
+/*****************************
+    ABOUT USERS STYLES
+*****************************/
+div.about-user {
+  padding: 20px 30px;
+}
+
+p#p-contact {
+  font-size: 14.625px;
+  color: #adaeb4;
+  margin: 0 0 0 10%;
+}
+
+div.contact-details {
+  margin-top: 13px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.contacts-card {
+  flex: 0 0 80%;
+  box-sizing: border-box;
+  border-radius: 9px;
+  height: 40vh;
+  margin: 10px 0;
+}
+
+div.contacts-card.empty {
+  border: 1.6875px dashed #a9b3d2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.contacts-card.filled {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+p.contact-name {
+  font-size: 20.5px;
+  color: #434b65;
+  font-weight: 900;
+  margin: 5px;
+}
+
+p.contact-age {
+  font-size: 13.5px;
+  color: #adaeb4;
+}
+
+div.reach-out {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+div.contacts-card p:last-child {
+  font-size: 14.625px;
+  text-align: center;
+  color: #a9b3d2;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
 }
