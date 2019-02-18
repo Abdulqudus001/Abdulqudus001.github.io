@@ -157,7 +157,7 @@ div.sidebar-nav {
 }
 
 .sidenav-sidemenu {
-  height: 100%;
+  height: -webkit-fill-available;
   background: linear-gradient(180deg, #0072ff 0%, #00c6ff 100%);
   display: flex;
   flex-direction: column;
