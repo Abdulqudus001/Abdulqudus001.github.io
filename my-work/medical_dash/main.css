@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Helvetica';
-  src: url('./fonts/HelveticaNeue\ Light.ttf')
+  font-family: "Helvetica";
+  src: url("./fonts/HelveticaNeue\ Light.ttf");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica' !important;
+  font-family: "Helvetica" !important;
 }
 
 div.container-fluid {
   padding: 0;
-  background: #F4F7FC;
+  background: #f4f7fc;
 }
 
 div.mobile-nav {
@@ -23,7 +23,7 @@ div.mobile-nav {
 
 div.navbar,
 div.sidebar-nav {
-  background: #FFF;
+  background: #fff;
   width: 100%;
   height: 10vh;
   box-shadow: 0px 4.5px 18px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@ div.sidebar-nav {
 div.toggle div {
   width: 20px;
   height: 3px;
-  background: #0271EE;
+  background: #0271ee;
   margin: 2px;
   border-radius: 2px;
 }
@@ -46,12 +46,12 @@ form button {
 
 form .search {
   border: none;
-  color: #A9B3D2;
+  color: #a9b3d2;
 }
 
 form button,
 form .search::placeholder {
-  color: #A9B3D2;
+  color: #a9b3d2;
   opacity: 0.7;
   line-height: 1.7;
   font-size: 14.625px;
@@ -61,14 +61,14 @@ div.user-profile {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #0271EE;
+  color: #0271ee;
 }
 
 div.user-profile-avatar {
   width: 36px;
   height: 36px;
   border-radius: 36px;
-  background: #A9B3D2;
+  background: #a9b3d2;
   margin-right: 2px;
 }
 
@@ -77,7 +77,7 @@ div.user-profile-avatar {
   position: absolute;
   top: 10vh;
   right: -3px;
-  background-color: #FFF;
+  background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -93,7 +93,7 @@ div.user-profile-avatar {
   white-space: nowrap;
   align-items: center;
   display: flex;
-  color: #A9B3D2;
+  color: #a9b3d2;
 }
 
 .dropdown:hover .dropdown-content {
@@ -101,11 +101,11 @@ div.user-profile-avatar {
 }
 
 a#create-documentation {
-  background: linear-gradient(101.13deg, #F46B45 0%, #EEA849 100%);
+  background: linear-gradient(101.13deg, #f46b45 0%, #eea849 100%);
   border-radius: 4.5px 4.5px 0 0;
   width: 100%;
   justify-content: space-between;
-  color: #FFF;
+  color: #fff;
 }
 
 .dropdown-content a div {
@@ -120,7 +120,7 @@ a#create-documentation {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .sidenav-sidemenu,
@@ -138,9 +138,9 @@ div.sidebar {
 }
 
 div.sidebar-nav {
-  background: #FFF;
+  background: #fff;
   position: relative;
-  height: 10vh;
+  height: 10%;
 }
 
 .sidebar-nav-options {
@@ -153,12 +153,12 @@ div.sidebar-nav {
 }
 
 .sidenav .closebtn {
-  color: #0271EE;
+  color: #0271ee;
 }
 
 .sidenav-sidemenu {
   height: 100%;
-  background: linear-gradient(180deg, #0072FF 0%, #00C6FF 100%);
+  background: linear-gradient(180deg, #0072ff 0%, #00c6ff 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -187,7 +187,7 @@ div.sidebar-nav {
   position: absolute;
   left: 0;
   top: -10px;
-  background: #2BE1CB;
+  background: #2be1cb;
   margin: 0;
   border-radius: 0 40px 40px 0;
 }
@@ -201,6 +201,7 @@ div.sidebar-nav {
   padding: 10px;
   height: 90vh;
   overflow-y: auto;
+  padding-bottom: 70px;
 }
 
 .sidenav-content span.header {
@@ -209,9 +210,9 @@ div.sidebar-nav {
   margin-bottom: 10%;
 }
 
-.sidenav-content span.header>p:first-child {
+.sidenav-content span.header > p:first-child {
   font-size: 1.5rem;
-  color: #434B65;
+  color: #434b65;
   font-weight: 600;
   line-height: 40px;
   margin: 0;
@@ -220,7 +221,7 @@ div.sidebar-nav {
 .sidenav-content span.header :last-child {
   display: flex;
   align-items: flex-end;
-  color: #9AA6CE;
+  color: #9aa6ce;
   font-weight: 600;
   padding-bottom: 4px;
 }
@@ -237,7 +238,7 @@ div.patient {
 }
 
 div.patient:hover {
-  background: #F4F7FC;
+  background: #f4f7fc;
   border-radius: 4.5px;
 }
 
@@ -248,24 +249,24 @@ div.patient .user-profile-avatar {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFF;
-  background: linear-gradient(180deg, #A26FED 0%, #EE86BF 100%);
+  color: #fff;
+  background: linear-gradient(180deg, #a26fed 0%, #ee86bf 100%);
 }
 
 div#leen {
-  background: linear-gradient(180deg, #FB72AE 0%, #F25555 100%);
+  background: linear-gradient(180deg, #fb72ae 0%, #f25555 100%);
 }
 
 div#rowan {
-  background: linear-gradient(180deg, #B482D3 0%, #A2ACF1 100%);
+  background: linear-gradient(180deg, #b482d3 0%, #a2acf1 100%);
 }
 
 div#allan {
-  background: linear-gradient(180deg, #FFB064 0%, #FFE35A 100%);
+  background: linear-gradient(180deg, #ffb064 0%, #ffe35a 100%);
 }
 
 div#neil {
-  background: linear-gradient(180deg, #45BAF2 0%, #77EFD8 100%);
+  background: linear-gradient(180deg, #45baf2 0%, #77efd8 100%);
 }
 
 div.patient .user-profile-avatar p {
@@ -292,12 +293,12 @@ div.user-info {
 .name-gender p {
   font-size: 15.75px;
   margin-right: 5px;
-  color: #434B65;
+  color: #434b65;
 }
 
 .age-condition p {
   font-size: 14.625px;
-  color: #ADAEB4;
+  color: #adaeb4;
 }
 
 .age-condition p:nth-child(2) {
@@ -332,27 +333,27 @@ div.selected-user-image {
 p.selected-user-name {
   font-size: 27px;
   font-weight: 900;
-  color: #434B65;
+  color: #434b65;
 }
 
 span.selected-user-details {
   display: flex;
   align-items: center;
   font-size: 14.625px;
-  color: #ADAEB4;
+  color: #adaeb4;
 }
 
 div.tiny-circle {
   height: 4px;
   width: 4px;
   border-radius: 4px;
-  background: #ADAEB4;
+  background: #adaeb4;
   margin: 0 7px;
 }
 
 div.navigation {
   width: 100%;
-  border-bottom: 2px solid #A9B3D2;
+  border-bottom: 2px solid #a9b3d2;
 }
 
 div.links {
@@ -360,11 +361,12 @@ div.links {
   justify-content: space-evenly;
   align-items: center;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 div.links a {
   font-size: 14.625px;
-  color: #008EFF;
+  color: #008eff;
   text-decoration: none;
 }
 
@@ -393,5 +395,5 @@ hr.hidden-line {
 }
 
 hr.show-line {
-  background: #008EFF;
+  background: #008eff;
 }
