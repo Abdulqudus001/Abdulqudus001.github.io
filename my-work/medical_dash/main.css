@@ -17,6 +17,7 @@ div.dummy {
 div.container-fluid {
   padding: 0;
   background: #f4f7fc;
+  overflow: hidden;
 }
 
 div.mobile-nav {
