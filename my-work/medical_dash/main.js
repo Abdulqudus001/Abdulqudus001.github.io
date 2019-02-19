@@ -33,3 +33,30 @@ sidebarLinks.forEach(link => {
     link.getElementsByTagName("hr")[0].classList.add("show-line");
   });
 });
+
+
+let checkbox = document.getElementById('checkbox');
+let otherCheckboxes = document.querySelectorAll('.checkboxes');
+
+
+checkbox.addEventListener('change', () => {
+  otherCheckboxes.forEach(checkboxes => {
+    checkboxes.checked = !checkboxes.checked;
+  })
+});
+
+let showMoreIcons = document.querySelectorAll('.show-extra');
+
+showMoreIcons.forEach((icon, index) => {
+  icon.addEventListener('click', () => {
+    if (icon.classList.contains('fa-caret-down')) {
+      let extra = document.getElementById(index + 1).style.display = 'block';
+      icon.classList.replace('fa-caret-down', 'fa-caret-up')
+    } else {
+      let extra = document.getElementById(index + 1).style.display = 'none';
+      icon.classList.replace('fa-caret-up', 'fa-caret-down')
+    }
+
+
+  })
+});

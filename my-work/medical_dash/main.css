@@ -217,7 +217,7 @@ div.sidebar-nav {
   margin-bottom: 10%;
 }
 
-.sidenav-content span.header>p:first-child {
+.sidenav-content span.header > p:first-child {
   font-size: 1.5rem;
   color: #434b65;
   font-weight: 600;
@@ -416,7 +416,7 @@ hr.show-line {
 *****************************/
 div.about-user {
   padding: 20px 30px;
-  height: 75vh;
+  height: 69vh;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 50px;
@@ -522,7 +522,7 @@ div.condition img {
   top: 3px;
 }
 
-div.d-nosis>p {
+div.d-nosis > p {
   font-size: 13.5px;
   color: #adaeb4;
   margin-bottom: 0;
@@ -535,11 +535,12 @@ div.documentation {
   padding: 20px 30px;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 90vh;
+  height: 69vh;
 }
 
-div.documentation>div {
+div.documentation > div {
   display: flex;
+  position: relative;
 }
 
 .doc-card {
@@ -564,10 +565,10 @@ div.documentation>div {
   width: 22.5px;
 }
 
-.wrapper input+label::before {
-  border: 2.25043px solid #A9B3D2;
+.wrapper input + label::before {
+  border: 2.25043px solid #a9b3d2;
   border-radius: 4.5px;
-  content: '';
+  content: "";
   height: 22.5px;
   left: 0;
   position: absolute;
@@ -575,9 +576,9 @@ div.documentation>div {
   width: 22.5px;
 }
 
-.wrapper input+label::after {
-  content: '';
-  border: 4px solid #A9B3D2;
+.wrapper input + label::after {
+  content: "";
+  border: 4px solid #a9b3d2;
   border-left: 0;
   border-top: 0;
   height: 15px;
@@ -590,41 +591,52 @@ div.documentation>div {
   width: 9px;
 }
 
-.wrapper input:checked+label::after {
+.wrapper input:checked + label::after {
   opacity: 1;
 }
 
 div.doc-card {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   padding: 25px 15px;
-  background: #FFF;
-  border-radius: 0 9px 9px 0;
+  background: #fff;
+  border-radius: 3px 9px 9px 3px;
   margin: 15px 0;
   white-space: nowrap;
+  color: #a9b3d2;
 }
 
-div.documentation>div>hr {
-  width: 5px;
-  height: auto;
-  position: relative;
-  left: 0;
-  z-index: 5;
-  border-radius: 9px 0 0 9px;
-}
-
-hr.blue-border-left {
-  background: #43ACFF;
-}
-
-hr.green-border-left {
-  background: #33CDBA;
+div.doc-card > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 40px;
 }
 
 div.doc-card.no-bg {
   background: none;
   margin: 0;
   padding-bottom: 0;
+}
+
+div.doc-card::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 9px 0 0 9px;
+}
+
+div.doc-card.blue-border-left::before {
+  background: #43acff;
+}
+
+div.doc-card.green-border-left::before {
+  background: #33cdba;
 }
 
 div.doc-card.no-bg span {
@@ -635,7 +647,7 @@ div.doc-card span {
   display: flex;
   justify-content: space-between;
   font-size: 16.8782px;
-  color: #A9B3D2;
+  color: #a9b3d2;
   width: 85%;
   align-items: center;
   overflow-x: auto;
@@ -664,4 +676,10 @@ div.doc-card span p:nth-child(3) {
 
 div.doc-card span p:last-child {
   flex: 0 0 40%;
+}
+
+div.doc-card div.extra {
+  display: block;
+  white-space: normal;
+  height: fit-content;
 }
