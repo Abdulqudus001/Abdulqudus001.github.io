@@ -730,11 +730,36 @@
       </div>
     </div>
 
-    <div id="Calendar" class="screens" style="display:none;">Cal</div>
+    <div id="Calendar" class="calendar screens" style="display:none;">
+      <div class="custom-calendar">
+        <div class="month-year">
+          <div class="month">
+            <p id="c-month">January</p>
+            <i id="p-month" class="fa fa-caret-left change"></i>
+            <i id="n-month" class="fa fa-caret-right change"></i>
+          </div>
+          <div class="year">
+            <p id="c-year">2018</p>
+            <i id="p-year" class="fa fa-caret-left change"></i>
+            <i id="n-year" class="fa fa-caret-right change"></i>
+          </div>
+        </div>
+        <div class="calendar-grid">
+          <div class="cal-grid days">Mon</div>
+          <div class="cal-grid days">Tue</div>
+          <div class="cal-grid days">Wed</div>
+          <div class="cal-grid days">Thu</div>
+          <div class="cal-grid days">Fri</div>
+          <div class="cal-grid days">Sat</div>
+          <div class="cal-grid days">Sun</div>
+        </div>
+      </div>
+    </div>
 
     <div id="Visit Frequency" class="screens" style="display:none;">VF</div>
   </div>
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/calendar.js"></script>
 </body>
 
 </html>

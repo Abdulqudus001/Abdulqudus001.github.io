@@ -718,3 +718,54 @@ div.patient-btn {
   color: #fff;
   justify-content: center;
 }
+
+/*************************
+  CALENDAR SCREEN STYLES  
+*************************/
+
+div.calendar {
+  padding: 20px 30px;
+  height: 69vh;
+}
+
+div.custom-calendar {
+  background: #fff;
+  border-radius: 9px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+div.month-year {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #9aa6ce;
+  font-size: 16.875px;
+}
+
+div.month-year div.year,
+div.month {
+  display: flex;
+  align-items: center;
+}
+
+div.month-year div.year p,
+div.month p {
+  margin: 0 5px;
+}
+
+div.month-year div.year i,
+div.month i {
+  margin: 0 5px;
+}
+
+div.calendar-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+div.cal-grid.days {
+  font-size: 13px;
+  color: #adaeb4;
+}
