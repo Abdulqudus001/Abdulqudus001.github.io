@@ -198,7 +198,6 @@ div.sidebar-nav {
   border-radius: 0 40px 40px 0;
 }
 
-
 .last-icon {
   position: relative;
   bottom: 1.7rem;
@@ -682,4 +681,40 @@ div.doc-card div.extra {
   display: block;
   white-space: normal;
   height: fit-content;
+}
+
+div.extra > div {
+  display: flex;
+  align-items: center;
+  color: #9aa6ce;
+  font-size: 16.8815px;
+  margin: 10px 0;
+}
+
+div.extra > div img {
+  margin-right: 10%;
+}
+
+div.extra > div p {
+  margin: 0;
+}
+
+div.patient-btns {
+  display: flex;
+  flex-flow: row wrap;
+  white-space: nowrap;
+  font-size: 16.8815px;
+  color: #fff;
+}
+
+div.patient-btn {
+  background: #43acff;
+  border-radius: 4.50173px;
+  box-shadow: 0px 2.25087px 6.7526px rgba(77, 77, 86, 0.05);
+  padding: 7px 22px;
+  margin: 3px 0 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
 }
