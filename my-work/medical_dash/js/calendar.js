@@ -76,6 +76,9 @@ function generateCalendar() {
 
   function createDaysColumn(day) {
     let div = document.createElement('div');
+    if (day == 'Sat') {
+      div.classList.add('no-border');
+    }
     div.classList.add('cal-grid', 'days');
     div.appendChild(document.createTextNode(day));
     return div;
@@ -121,6 +124,15 @@ function generateCalendar() {
   for (let i = 1; i < days.length - lastIndexInDays; i++) {
     allDays.push(createDiv(i, ['cal-grid', 'future']));
   }
+
+  lastIndexInDays = -1;
+  allDays.forEach((day, index) => {
+    lastIndexInDays++;
+    lastIndexInDays = lastIndexInDays >= days.length ? 0 : lastIndexInDays;
+    if (days[lastIndexInDays] == 'Sat') {
+      day.classList.add('no-border');
+    }
+  });
 
   document.getElementById('calendar-grid').append(...allDays);
 }

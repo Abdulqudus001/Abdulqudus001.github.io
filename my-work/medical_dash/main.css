@@ -732,7 +732,6 @@ div.custom-calendar {
   background: #fff;
   border-radius: 9px;
   width: 100%;
-  padding: 10px;
 }
 
 div.month-year {
@@ -741,6 +740,7 @@ div.month-year {
   width: 100%;
   color: #9aa6ce;
   font-size: 16.875px;
+  padding: 10px;
 }
 
 div.month-year div.year,
@@ -768,6 +768,12 @@ div.cal-grid {
   font-size: 15.75px;
   color: #9aa6ce;
   padding: 0.5rem;
+  border-top: 1px solid rgba(169, 179, 210, 0.2);
+  border-right: 1px solid rgba(169, 179, 210, 0.2);
+}
+
+div.cal-grid.no-border {
+  border-right: none;
 }
 
 div.cal-grid.days {
@@ -778,5 +784,42 @@ div.cal-grid.days {
 div.cal-grid.blur,
 div.cal-grid.former,
 div.cal-grid.future {
-  opacity: 0.3;
+  color: rgba(154, 166, 206, 0.3);
+}
+
+div.mobile-keys {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+div.key {
+  display: flex;
+  align-items: center;
+}
+
+div.key p {
+  margin: 0;
+}
+
+div.key-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: #f46b45;
+  margin-right: 5px;
+}
+
+div.key-color.red {
+  background: #eb5757;
+}
+
+div.key-color.orange {
+  background: #f2994a;
+}
+
+div.key-color.green {
+  background: #27ae60;
 }
