@@ -731,7 +731,6 @@ div.calendar {
 div.custom-calendar {
   background: #fff;
   border-radius: 9px;
-  height: 100%;
   width: 100%;
   padding: 10px;
 }
@@ -765,7 +764,19 @@ div.calendar-grid {
   grid-template-columns: auto auto auto auto auto auto auto;
 }
 
+div.cal-grid {
+  font-size: 15.75px;
+  color: #9aa6ce;
+  padding: 0.5rem;
+}
+
 div.cal-grid.days {
   font-size: 13px;
   color: #adaeb4;
+}
+
+div.cal-grid.blur,
+div.cal-grid.former,
+div.cal-grid.future {
+  opacity: 0.3;
 }
