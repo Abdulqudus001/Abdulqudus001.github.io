@@ -929,6 +929,11 @@ div.key-color.green,
 }
 
 @media (min-width: 768px) {
+  .top-icons hr {
+    height: 60px;
+    top: -20px;
+  }
+
   div.selected-user {
     padding: 30px;
     height: auto;
@@ -1036,7 +1041,7 @@ div.key-color.green,
 
 @media (min-width: 1200px) {
   div.user-options {
-    width: 37%;
+    width: 26vw;
     cursor: pointer;
   }
 
