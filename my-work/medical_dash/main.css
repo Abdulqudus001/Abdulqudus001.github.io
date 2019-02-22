@@ -818,6 +818,7 @@ div.key-color {
 
 div.div-card {
   border-radius: 5px;
+  opacity: 0.6;
   padding: 2px 5px;
   color: #FFF;
   text-align: center;
