@@ -157,7 +157,18 @@ div.sidebar-nav {
   position: relative;
   height: 100%;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 10px 0 20px;
+}
+
+div.sidebar-nav hr {
+  width: 1.12px;
+  height: 36px;
+  position: absolute;
+  right: 0;
+  background: #a9b3d2;
+  opacity: 0.2;
+  top: 13.5px;
+  margin: 0;
 }
 
 .sidenav .closebtn {
@@ -386,7 +397,7 @@ div.navigation {
 
 div.links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   overflow-x: auto;
   overflow-y: hidden;
@@ -798,6 +809,8 @@ div.cal-grid.no-border {
 div.cal-grid.days {
   font-size: 13px;
   color: #adaeb4;
+  border: none;
+  margin-bottom: -1.2rem;
 }
 
 div.cal-grid.blur,
@@ -839,6 +852,7 @@ div.div-card {
   padding: 2px 5px;
   color: #FFF;
   text-align: center;
+  width: fit-content;
 }
 
 div.key-color.red,
@@ -855,3 +869,36 @@ div.key-color.green,
 .div-card.green-card {
   background: #27ae60;
 }
+
+@media (min-width: 600px) {
+  div.links {
+    width: 70%;
+  }
+
+  p.p-contact {
+    margin: 0 0 0 3%;
+  }
+
+  div.contact-details {
+    justify-content: flex-start;
+  }
+
+  div.contacts-card {
+    flex: 0 0 45%;
+    margin: 10px 2.5%;
+  }
+
+  div.patient-btn {
+    margin: 3px 10px 10px 0;
+  }
+
+  div.calendar {
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

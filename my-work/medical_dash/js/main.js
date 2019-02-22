@@ -12,7 +12,7 @@ function getWidth(width) {
     marginLeft = '0';
   } else if (width > 991 && width < 1200) {
     sideNavWidth = '35vw';
-    marginLeft = '35vw';
+    marginLeft = '0';
   } else if (width > 1199 && width < 1300) {
     sideNavWidth = '30vw'
     marginLeft = '30vw';
@@ -25,12 +25,24 @@ function getWidth(width) {
   }
 }
 
-function openNav() {
-  getWidth(screen.availWidth);
+// Open sideNav if screen width is large enough
+if (window.innerWidth > 1199) {
+  getWidth(window.innerWidth);
   document.getElementById("mySidenav").style.width = sideNavWidth;
   document.getElementById('main').style.marginLeft = marginLeft;
   document.getElementById("sidenav-sidemenu").style.width = "60px";
   document.getElementById("sidenav-content").style.width = "80%";
+  document.getElementById('toggle').style.display = 'none';
+}
+
+
+function openNav() {
+  getWidth(window.innerWidth);
+  document.getElementById("mySidenav").style.width = sideNavWidth;
+  document.getElementById('main').style.marginLeft = marginLeft;
+  document.getElementById("sidenav-sidemenu").style.width = "60px";
+  document.getElementById("sidenav-content").style.width = "80%";
+  document.getElementById('toggle').style.display = 'none';
 }
 
 /* Set the width of the side navigation to 0 */
@@ -39,6 +51,7 @@ function closeNav() {
   document.getElementById('main').style.marginLeft = '0';
   document.getElementById("sidenav-sidemenu").style.width = "0";
   document.getElementById("sidenav-content").style.width = "0";
+  document.getElementById('toggle').style.display = 'block';
 }
 
 let sidebarLinks = document.querySelectorAll(".selected-navmenu");
