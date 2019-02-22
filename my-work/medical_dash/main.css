@@ -216,7 +216,7 @@ div.sidebar-nav {
   margin-bottom: 10%;
 }
 
-.sidenav-content span.header > p:first-child {
+.sidenav-content span.header>p:first-child {
   font-size: 1.5rem;
   color: #434b65;
   font-weight: 600;
@@ -521,7 +521,7 @@ div.condition img {
   top: 3px;
 }
 
-div.d-nosis > p {
+div.d-nosis>p {
   font-size: 13.5px;
   color: #adaeb4;
   margin-bottom: 0;
@@ -537,7 +537,7 @@ div.documentation {
   height: 69vh;
 }
 
-div.documentation > div {
+div.documentation>div {
   display: flex;
   position: relative;
 }
@@ -564,7 +564,7 @@ div.documentation > div {
   width: 22.5px;
 }
 
-.wrapper input + label::before {
+.wrapper input+label::before {
   border: 2.25043px solid #a9b3d2;
   border-radius: 4.5px;
   content: "";
@@ -575,7 +575,7 @@ div.documentation > div {
   width: 22.5px;
 }
 
-.wrapper input + label::after {
+.wrapper input+label::after {
   content: "";
   border: 4px solid #a9b3d2;
   border-left: 0;
@@ -590,7 +590,7 @@ div.documentation > div {
   width: 9px;
 }
 
-.wrapper input:checked + label::after {
+.wrapper input:checked+label::after {
   opacity: 1;
 }
 
@@ -607,7 +607,7 @@ div.doc-card {
   color: #a9b3d2;
 }
 
-div.doc-card > div {
+div.doc-card>div {
   display: flex;
   width: 100%;
   align-items: center;
@@ -683,7 +683,7 @@ div.doc-card div.extra {
   height: fit-content;
 }
 
-div.extra > div {
+div.extra>div {
   display: flex;
   align-items: center;
   color: #9aa6ce;
@@ -691,11 +691,11 @@ div.extra > div {
   margin: 10px 0;
 }
 
-div.extra > div img {
+div.extra>div img {
   margin-right: 10%;
 }
 
-div.extra > div p {
+div.extra>div p {
   margin: 0;
 }
 
@@ -724,7 +724,7 @@ div.patient-btn {
 *************************/
 
 div.calendar {
-  padding: 20px 30px;
+  padding: 10px;
   height: 69vh;
 }
 
@@ -770,6 +770,7 @@ div.cal-grid {
   padding: 0.5rem;
   border-top: 1px solid rgba(169, 179, 210, 0.2);
   border-right: 1px solid rgba(169, 179, 210, 0.2);
+  height: 4rem;
 }
 
 div.cal-grid.no-border {
@@ -788,11 +789,12 @@ div.cal-grid.future {
 }
 
 div.mobile-keys {
-  margin: 10px 0;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  width: 80%
 }
 
 div.key {
@@ -812,14 +814,24 @@ div.key-color {
   margin-right: 5px;
 }
 
-div.key-color.red {
+div.div-card {
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: #FFF;
+  text-align: center;
+}
+
+div.key-color.red,
+.div-card.red-card {
   background: #eb5757;
 }
 
-div.key-color.orange {
+div.key-color.orange,
+.div-card.orange-card {
   background: #f2994a;
 }
 
-div.key-color.green {
+div.key-color.green,
+.div-card.green-card {
   background: #27ae60;
 }

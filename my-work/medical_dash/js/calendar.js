@@ -1,4 +1,17 @@
-let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
 
 let currentMonthIndex = new Date().getMonth();
 
@@ -15,7 +28,7 @@ function setMonth() {
   }
   firstDay = getFirstDay(currentMonthIndex, currentYear);
   daysInMonth = getDaysInMonth(currentMonthIndex, currentYear);
-  document.getElementById('c-month').innerHTML = months[currentMonthIndex];
+  document.getElementById("c-month").innerHTML = months[currentMonthIndex];
   generateCalendar();
 }
 
@@ -23,7 +36,7 @@ function setMonth() {
 function setYear() {
   firstDay = getFirstDay(currentMonthIndex, currentYear);
   daysInMonth = getDaysInMonth(currentMonthIndex, currentYear);
-  document.getElementById('c-year').innerHTML = currentYear.toString();
+  document.getElementById("c-year").innerHTML = currentYear.toString();
   generateCalendar();
 }
 
@@ -32,25 +45,25 @@ setMonth();
 setYear();
 
 // Change month or year on btn click
-let btns = document.querySelectorAll('.change');
+let btns = document.querySelectorAll(".change");
 
 btns.forEach(btn => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener("click", () => {
     // currentMonthIndex = currentMonthIndex >= months.length - 1 ? 0 : currentMonthIndex;
     switch (btn.id) {
-      case 'p-month':
+      case "p-month":
         currentMonthIndex -= 1;
         setMonth();
         break;
-      case 'n-month':
+      case "n-month":
         currentMonthIndex += 1;
         setMonth();
         break;
-      case 'p-year':
+      case "p-year":
         currentYear -= 1;
         setYear();
         break;
-      case 'n-year':
+      case "n-year":
         currentYear += 1;
         setYear();
       default:
@@ -67,30 +80,29 @@ function getFirstDay(month, year) {
   return new Date(year, month).getDay();
 }
 
-
 function generateCalendar() {
-  let calendar = document.getElementById('calendar-grid');
+  let calendar = document.getElementById("calendar-grid");
   while (calendar.firstChild) {
     calendar.removeChild(calendar.firstChild);
   }
 
   function createDaysColumn(day) {
-    let div = document.createElement('div');
-    if (day == 'Sat') {
-      div.classList.add('no-border');
+    let div = document.createElement("div");
+    if (day == "Sat") {
+      div.classList.add("no-border");
     }
-    div.classList.add('cal-grid', 'days');
+    div.classList.add("cal-grid", "days");
     div.appendChild(document.createTextNode(day));
     return div;
   }
 
-  let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   for (let i of days) {
-    document.getElementById('calendar-grid').append(createDaysColumn(i));
+    document.getElementById("calendar-grid").append(createDaysColumn(i));
   }
 
   function createDiv(number, classNames) {
-    let div = document.createElement('div');
+    let div = document.createElement("div");
     div.classList.add(...classNames);
     div.appendChild(document.createTextNode(number.toString()));
     return div;
@@ -102,12 +114,12 @@ function generateCalendar() {
 
   let formerDays = [];
   for (let i = daysInPreviousMonth; i > daysInPreviousMonth - firstDay; i--) {
-    formerDays.unshift(createDiv(i, ['cal-grid', 'former']));
+    formerDays.unshift(createDiv(i, ["cal-grid", "former"]));
   }
 
   let currentDays = [];
   for (let i = 1; i <= daysInMonth; i++) {
-    currentDays.push(createDiv(i, ['cal-grid', 'current']));
+    currentDays.push(createDiv(i, ["cal-grid", "current"]));
   }
 
   let allDays = [...formerDays, ...currentDays];
@@ -116,23 +128,77 @@ function generateCalendar() {
   allDays.forEach((day, index) => {
     lastIndexInDays++;
     lastIndexInDays = lastIndexInDays >= days.length ? 0 : lastIndexInDays;
-    if (days[lastIndexInDays] == 'Sat' || days[lastIndexInDays] == 'Sun') {
-      day.classList.add('blur');
+    if (days[lastIndexInDays] == "Sat" || days[lastIndexInDays] == "Sun") {
+      day.classList.add("blur");
     }
   });
 
   for (let i = 1; i < days.length - lastIndexInDays; i++) {
-    allDays.push(createDiv(i, ['cal-grid', 'future']));
+    allDays.push(createDiv(i, ["cal-grid", "future"]));
   }
 
   lastIndexInDays = -1;
+  let counter = 0;
+  let cards = {
+    0: {
+      text: screen.width < 992 ? "BT" : "Blood Test",
+      class: "red-card"
+    },
+    1: {
+      text: screen.width < 992 ? "BR" : "Blood Result",
+      class: "red-card"
+    },
+    2: {
+      text: screen.width < 992 ? "UZ" : "Uzi Result",
+      class: "orange-card"
+    },
+    3: {
+      text: screen.width < 992 ? "D" : "Dentist",
+      class: "green-card"
+    }
+  };
   allDays.forEach((day, index) => {
     lastIndexInDays++;
     lastIndexInDays = lastIndexInDays >= days.length ? 0 : lastIndexInDays;
-    if (days[lastIndexInDays] == 'Sat') {
-      day.classList.add('no-border');
+    if (days[lastIndexInDays] == "Sat") {
+      day.classList.add("no-border");
+      // } else if (days[lastIndexInDays] != 'Sat' && days[lastIndexInDays] != 'Sun') {
+      //   if (!day.classList.contains('former') && !day.classList.contains('future') && counter < 4) {
+      //     console.log(days[lastIndexInDays])
+      //     console.log(day.classList.value);
+      //     let randomNumber = Math.floor(Math.random() * Math.floor(daysInMonth));
+      //     // console.log(randomNumber)
+      // let newDiv = document.createElement('div');
+      // newDiv.appendChild(document.createTextNode(cards[counter]['text']));
+      // newDiv.classList.add(cards[counter]['class']);
+      // allDays[randomNumber].append(newDiv);
+      // allDays[randomNumber].classList.add('div-with-card');
+      // counter++;
+      //   }
     }
   });
 
-  document.getElementById('calendar-grid').append(...allDays);
+  currentDays.forEach(element => {
+    if (counter < 4) {
+      let randomNumber = Math.floor(
+        Math.random() * Math.floor(currentDays.length)
+      );
+      while (
+        currentDays[randomNumber].classList.contains("blur") ||
+        currentDays[randomNumber].classList.contains("div-with-card")
+      ) {
+        randomNumber = Math.floor(
+          Math.random() * Math.floor(currentDays.length)
+        );
+      }
+      let newDiv = document.createElement("div");
+      newDiv.appendChild(document.createTextNode(cards[counter]["text"]));
+      newDiv.classList.add("div-card", cards[counter]["class"]);
+      currentDays[randomNumber].append(newDiv);
+      currentDays[randomNumber].classList.add("div-with-card");
+      counter++;
+    }
+  });
+
+  document.getElementById("calendar-grid").append(...allDays);
 }
