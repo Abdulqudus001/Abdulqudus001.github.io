@@ -112,12 +112,16 @@ div.user-profile-avatar {
   display: block;
 }
 
-a#create-documentation {
+a.create-documentation {
   background: linear-gradient(101.13deg, #f46b45 0%, #eea849 100%);
   border-radius: 4.5px 4.5px 0 0;
   width: 100%;
   justify-content: space-between;
   color: #fff;
+}
+
+a.cd1 {
+  display: none;
 }
 
 .dropdown-content a div {
@@ -967,9 +971,27 @@ div.key-color.green,
 }
 
 @media (min-width: 992px) {
+  div.user-options {
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+  }
+
+  a.cd1 {
+    display: flex;
+    width: fit-content;
+    border-radius: 4.5px;
+    padding: 8px 20px;
+  }
+
+  a.cd1 img {
+    margin-right: 10px;
+  }
+
   div.links {
     width: 55%;
     margin-left: 18px;
+    overflow: hidden;
   }
 
   div.selected-navmenu hr {
@@ -988,6 +1010,19 @@ div.key-color.green,
     flex: 0 0 45%;
     margin: 6px 2.5%;
   }
+
+  div.custom-calendar {
+    margin-bottom: 30px;
+  }
+
+  div.mobile-keys {
+    display: none;
+  }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  div.contacts-card {
+    flex: 0 0 28%;
+    margin: 10px 2.5%;
+  }
+}
