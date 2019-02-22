@@ -813,6 +813,7 @@ div.key-color {
   height: 10px;
   border-radius: 3px;
   background: #f46b45;
+  opacity: 0.6;
   margin-right: 5px;
 }
 
