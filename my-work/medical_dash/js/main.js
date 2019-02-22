@@ -1,13 +1,42 @@
-/* Set the width of the side navigation to 250px */
+/* Set the width of the side navigation to */
+
+let sideNavWidth = '';
+let marginLeft = ''
+
+function getWidth(width) {
+  if (width > 599 && width < 768) {
+    sideNavWidth = '60vw';
+    marginLeft = '0';
+  } else if (width > 767 && width < 992) {
+    sideNavWidth = '50vw';
+    marginLeft = '0';
+  } else if (width > 991 && width < 1200) {
+    sideNavWidth = '35vw';
+    marginLeft = '35vw';
+  } else if (width > 1199 && width < 1300) {
+    sideNavWidth = '30vw'
+    marginLeft = '30vw';
+  } else if (width > 1299) {
+    sideNavWidth = '25vw'
+    marginLeft = '25vw';
+  } else {
+    sideNavWidth = '80vw';
+    marginLeft = '0';
+  }
+}
+
 function openNav() {
-  document.getElementById("mySidenav").style.width = "80vw";
-  document.getElementById("sidenav-sidemenu").style.width = "20%";
+  getWidth(screen.availWidth);
+  document.getElementById("mySidenav").style.width = sideNavWidth;
+  document.getElementById('main').style.marginLeft = marginLeft;
+  document.getElementById("sidenav-sidemenu").style.width = "60px";
   document.getElementById("sidenav-content").style.width = "80%";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.getElementById('main').style.marginLeft = '0';
   document.getElementById("sidenav-sidemenu").style.width = "0";
   document.getElementById("sidenav-content").style.width = "0";
 }
