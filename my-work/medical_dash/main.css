@@ -28,9 +28,6 @@ div.mobile-nav {
   width: 100%;
 }
 
-div.navbar {
-  position: fixed;
-}
 
 div.navbar,
 div.sidebar-nav {
@@ -120,7 +117,8 @@ a.create-documentation {
   color: #fff;
 }
 
-a.cd1 {
+a.cd1,
+#j_bob {
   display: none;
 }
 
@@ -332,8 +330,9 @@ div.user-info {
 }
 
 .name-gender p {
-  font-size: 15.75px;
+  font-size: 15px;
   margin-right: 5px;
+  font-weight: 600;
   color: #434b65;
 }
 
@@ -363,7 +362,6 @@ div.selected-user {
   align-items: center;
   padding: 15px 10px;
   height: 15vh;
-  margin-top: 10vh;
 }
 
 div.selected-user-image {
@@ -936,6 +934,12 @@ div.key-color.green,
     height: auto;
   }
 
+  div.about-user,
+  div.documentation,
+  div.calendar {
+    height: 64vh;
+  }
+
   div.links {
     width: 60%;
   }
@@ -982,6 +986,16 @@ div.key-color.green,
     width: fit-content;
     border-radius: 4.5px;
     padding: 8px 20px;
+    font-size: 13.5px;
+  }
+
+  a.cd1:hover {
+    color: #FFF;
+    font-size: 14.5px;
+  }
+
+  a.cd2 {
+    display: none;
   }
 
   a.cd1 img {
@@ -1021,8 +1035,33 @@ div.key-color.green,
 }
 
 @media (min-width: 1200px) {
+  div.user-options {
+    width: 37%;
+    cursor: pointer;
+  }
+
   div.contacts-card {
     flex: 0 0 28%;
     margin: 10px 2.5%;
+  }
+
+  div.documentation {
+    padding: 20px 50px;
+  }
+
+  div.doc-card {
+    padding: 12px 0 12px 25px;
+  }
+
+  div.extra>div {
+    margin: 20px 0;
+  }
+
+  #j_bob {
+    display: block;
+    font-size: 14.625px;
+    color: #9aa6ce;
+    margin: 0 10px;
+    font-weight: 600;
   }
 }
