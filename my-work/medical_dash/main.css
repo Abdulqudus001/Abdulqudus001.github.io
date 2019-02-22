@@ -726,6 +726,8 @@ div.patient-btn {
 div.calendar {
   padding: 10px;
   height: 69vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 div.custom-calendar {
