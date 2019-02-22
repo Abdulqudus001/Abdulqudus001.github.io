@@ -53,6 +53,7 @@ form button {
 form .search {
   border: none;
   color: #a9b3d2;
+  outline: none;
 }
 
 form button,
