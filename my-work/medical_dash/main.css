@@ -28,6 +28,10 @@ div.mobile-nav {
   width: 100%;
 }
 
+div.navbar {
+  position: fixed;
+}
+
 div.navbar,
 div.sidebar-nav {
   background: #fff;
@@ -355,6 +359,7 @@ div.selected-user {
   align-items: center;
   padding: 15px 10px;
   height: 15vh;
+  margin-top: 10vh;
 }
 
 div.selected-user-image {
@@ -850,9 +855,16 @@ div.div-card {
   border-radius: 5px;
   opacity: 0.6;
   padding: 2px 5px;
+  font-size: 12.375px;
   color: #FFF;
   text-align: center;
   width: fit-content;
+}
+
+div.div-with-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 div.key-color.red,
@@ -888,6 +900,23 @@ div.key-color.green,
     margin: 10px 2.5%;
   }
 
+
+  div.doc-card span p:first-child {
+    flex: 0 0 20%;
+  }
+
+  div.doc-card span p:nth-child(2) {
+    flex: 0 0 50%;
+  }
+
+  div.doc-card span p:nth-child(3) {
+    flex: 0 0 30%;
+  }
+
+  div.doc-card span p:last-child {
+    flex: 0 0 25%;
+  }
+
   div.patient-btn {
     margin: 3px 10px 10px 0;
   }
@@ -897,8 +926,68 @@ div.key-color.green,
   }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  div.selected-user {
+    padding: 30px;
+    height: auto;
+  }
 
-@media (min-width: 992px) {}
+  div.links {
+    width: 60%;
+  }
+
+  div.contacts-card {
+    flex: 0 0 30%;
+    margin: 10px 1.5%;
+  }
+
+  .wrapper {
+    width: 10%;
+  }
+
+  div.doc-card span p:first-child {
+    flex: 0 0 12%;
+  }
+
+  div.doc-card span p:nth-child(2) {
+    flex: 0 0 35%;
+  }
+
+  div.doc-card span p:nth-child(3) {
+    flex: 0 0 20%;
+  }
+
+  div.doc-card span p:last-child {
+    flex: 0 0 15%;
+  }
+
+  div.cal-grid {
+    height: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  div.links {
+    width: 55%;
+    margin-left: 18px;
+  }
+
+  div.selected-navmenu hr {
+    width: 160%;
+  }
+
+  div.contacts-card {
+    height: 50vh;
+  }
+
+  p.diag {
+    margin-top: 15px;
+  }
+
+  div.d-nosis {
+    flex: 0 0 45%;
+    margin: 6px 2.5%;
+  }
+}
 
 @media (min-width: 1200px) {}

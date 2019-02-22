@@ -8,7 +8,7 @@ function getWidth(width) {
     sideNavWidth = '60vw';
     marginLeft = '0';
   } else if (width > 767 && width < 992) {
-    sideNavWidth = '50vw';
+    sideNavWidth = '45vw';
     marginLeft = '0';
   } else if (width > 991 && width < 1200) {
     sideNavWidth = '35vw';

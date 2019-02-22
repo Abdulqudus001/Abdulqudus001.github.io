@@ -141,19 +141,19 @@ function generateCalendar() {
   let counter = 0;
   let cards = {
     0: {
-      text: screen.width < 992 ? "BT" : "Blood Test",
+      text: window.innerWidth < 992 ? "BT" : "Blood Test",
       class: "red-card"
     },
     1: {
-      text: screen.width < 992 ? "BR" : "Blood Result",
+      text: window.innerWidth < 992 ? "BR" : "Blood Result",
       class: "red-card"
     },
     2: {
-      text: screen.width < 992 ? "UZ" : "Uzi Result",
+      text: window.innerWidth < 992 ? "UZ" : "Uzi Result",
       class: "orange-card"
     },
     3: {
-      text: screen.width < 992 ? "D" : "Dentist",
+      text: window.innerWidth < 992 ? "D" : "Dentist",
       class: "green-card"
     }
   };
