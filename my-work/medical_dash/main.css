@@ -414,6 +414,11 @@ div.links a {
   font-size: 14.625px;
   color: #008eff;
   text-decoration: none;
+  opacity: 0.8;
+}
+
+div.links:visited {
+  opacity: 0.9;
 }
 
 div.links div {
@@ -509,7 +514,7 @@ div.reach-out {
   display: flex;
   flex-direction: row;
   width: 90%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 div.contacts-card p:last-child {
