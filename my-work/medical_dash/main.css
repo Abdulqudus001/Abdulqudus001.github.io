@@ -28,7 +28,6 @@ div.mobile-nav {
   width: 100%;
 }
 
-
 div.navbar,
 div.sidebar-nav {
   background: #fff;
@@ -236,7 +235,7 @@ div.sidebar-nav hr {
   margin-bottom: 10%;
 }
 
-.sidenav-content span.header>p:first-child {
+.sidenav-content span.header > p:first-child {
   font-size: 1.5rem;
   color: #434b65;
   font-weight: 600;
@@ -412,12 +411,12 @@ div.links {
 
 div.links a {
   font-size: 14.625px;
-  color: #43ACFF;
+  color: #43acff;
   text-decoration: none;
   opacity: 0.8;
 }
 
-div.links:visited {
+div.links a:visited {
   opacity: 0.9;
   color: #008eff;
 }
@@ -562,7 +561,7 @@ div.condition img {
   top: 3px;
 }
 
-div.d-nosis>p {
+div.d-nosis > p {
   font-size: 13.5px;
   color: #adaeb4;
   margin-bottom: 0;
@@ -578,7 +577,7 @@ div.documentation {
   height: 69vh;
 }
 
-div.documentation>div {
+div.documentation > div {
   display: flex;
   position: relative;
 }
@@ -605,7 +604,7 @@ div.documentation>div {
   width: 22.5px;
 }
 
-.wrapper input+label::before {
+.wrapper input + label::before {
   border: 2.25043px solid #a9b3d2;
   border-radius: 4.5px;
   content: "";
@@ -617,7 +616,7 @@ div.documentation>div {
   opacity: 0.3;
 }
 
-.wrapper input+label::after {
+.wrapper input + label::after {
   content: "";
   border: 4px solid #a9b3d2;
   border-left: 0;
@@ -632,7 +631,7 @@ div.documentation>div {
   width: 9px;
 }
 
-.wrapper input:checked+label::after {
+.wrapper input:checked + label::after {
   opacity: 1;
 }
 
@@ -649,7 +648,7 @@ div.doc-card {
   color: #a9b3d2;
 }
 
-div.doc-card>div {
+div.doc-card > div {
   display: flex;
   width: 100%;
   align-items: center;
@@ -725,7 +724,7 @@ div.doc-card div.extra {
   height: fit-content;
 }
 
-div.extra>div {
+div.extra > div {
   display: flex;
   align-items: center;
   color: #9aa6ce;
@@ -733,11 +732,11 @@ div.extra>div {
   margin: 10px 0;
 }
 
-div.extra>div img {
+div.extra > div img {
   margin-right: 10%;
 }
 
-div.extra>div p {
+div.extra > div p {
   margin: 0;
 }
 
@@ -840,7 +839,7 @@ div.mobile-keys {
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-around;
-  width: 80%
+  width: 80%;
 }
 
 div.key {
@@ -866,7 +865,7 @@ div.div-card {
   opacity: 0.6;
   padding: 2px 5px;
   font-size: 12.375px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   width: fit-content;
 }
@@ -909,7 +908,6 @@ div.key-color.green,
     flex: 0 0 45%;
     margin: 10px 2.5%;
   }
-
 
   div.doc-card span p:first-child {
     flex: 0 0 20%;
@@ -1003,7 +1001,7 @@ div.key-color.green,
   }
 
   a.cd1:hover {
-    color: #FFF;
+    color: #fff;
     font-size: 14.5px;
   }
 
@@ -1066,7 +1064,7 @@ div.key-color.green,
     padding: 12px 0 12px 25px;
   }
 
-  div.extra>div {
+  div.extra > div {
     margin: 20px 0;
   }
 
