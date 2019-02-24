@@ -35,6 +35,16 @@ if (window.innerWidth > 1199) {
   document.getElementById('toggle').style.display = 'none';
 }
 
+// update screen on scroll
+
+window.addEventListener('resize', () => {
+  getWidth(window.innerWidth);
+  document.getElementById("mySidenav").style.width = sideNavWidth;
+  document.getElementById('main').style.marginLeft = marginLeft;
+  document.getElementById("sidenav-sidemenu").style.width = "60px";
+  document.getElementById("sidenav-content").style.width = "80%";
+  document.getElementById('toggle').style.display = 'none';
+})
 
 function openNav() {
   getWidth(window.innerWidth);
