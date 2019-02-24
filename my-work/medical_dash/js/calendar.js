@@ -162,19 +162,6 @@ function generateCalendar() {
     lastIndexInDays = lastIndexInDays >= days.length ? 0 : lastIndexInDays;
     if (days[lastIndexInDays] == "Sat") {
       day.classList.add("no-border");
-      // } else if (days[lastIndexInDays] != 'Sat' && days[lastIndexInDays] != 'Sun') {
-      //   if (!day.classList.contains('former') && !day.classList.contains('future') && counter < 4) {
-      //     console.log(days[lastIndexInDays])
-      //     console.log(day.classList.value);
-      //     let randomNumber = Math.floor(Math.random() * Math.floor(daysInMonth));
-      //     // console.log(randomNumber)
-      // let newDiv = document.createElement('div');
-      // newDiv.appendChild(document.createTextNode(cards[counter]['text']));
-      // newDiv.classList.add(cards[counter]['class']);
-      // allDays[randomNumber].append(newDiv);
-      // allDays[randomNumber].classList.add('div-with-card');
-      // counter++;
-      //   }
     }
   });
 

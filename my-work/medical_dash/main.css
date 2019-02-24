@@ -416,9 +416,9 @@ div.links a {
   opacity: 0.8;
 }
 
-div.links a:visited {
+div.links .visited a {
   opacity: 0.9;
-  color: red;
+  color: #008eff;
 }
 
 div.links div {

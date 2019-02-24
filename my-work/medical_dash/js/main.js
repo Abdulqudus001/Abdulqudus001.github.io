@@ -70,6 +70,12 @@ let screens = document.querySelectorAll(".screens");
 
 sidebarLinks.forEach(link => {
   link.addEventListener("click", () => {
+    sidebarLinks.forEach(eachLink => {
+      if (eachLink.classList.contains('visited')) {
+        eachLink.classList.remove('visited');
+      }
+    });
+    link.classList.add('visited');
     lines.forEach(item => {
       if (item.classList.value.indexOf("show-line") > -1) {
         item.classList.remove("show-line");
