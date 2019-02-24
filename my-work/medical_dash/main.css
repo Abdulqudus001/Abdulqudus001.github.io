@@ -412,13 +412,14 @@ div.links {
 
 div.links a {
   font-size: 14.625px;
-  color: #008eff;
+  color: #43ACFF;
   text-decoration: none;
   opacity: 0.8;
 }
 
 div.links:visited {
   opacity: 0.9;
+  color: #008eff;
 }
 
 div.links div {
