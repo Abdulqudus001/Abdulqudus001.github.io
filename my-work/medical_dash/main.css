@@ -438,6 +438,7 @@ div.selected-navmenu hr {
   margin: 10px 0 0 0;
   position: relative;
   bottom: -2px;
+  opacity: 0.9;
 }
 
 hr.hidden-line {
@@ -612,6 +613,7 @@ div.documentation>div {
   position: absolute;
   top: 0;
   width: 22.5px;
+  opacity: 0.3;
 }
 
 .wrapper input+label::after {
