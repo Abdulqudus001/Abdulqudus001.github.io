@@ -46,6 +46,8 @@ window.addEventListener("load", () => {
         typedNumber += number.innerHTML;
         currentText.innerHTML = typedNumber;
       }
+      // Move cursor to end of line on overflow
+      currentText.scrollLeft = currentText.scrollWidth;
     });
   });
 
