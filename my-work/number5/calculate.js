@@ -32,6 +32,7 @@ window.addEventListener("load", () => {
   let product = document.getElementById("product");
   let equals = document.getElementById("equals");
   let percentage = document.getElementById("percentage");
+  let negate = document.getElementById('negate');
 
   let nums = [];
   let numberToBeAdded = "";
@@ -42,7 +43,7 @@ window.addEventListener("load", () => {
   let typedNumber = "";
   numbers.forEach(number => {
     number.addEventListener("click", () => {
-      if (number.id != "equals") {
+      if (number.id != "equals" && number.id != 'negate') {
         typedNumber += number.innerHTML;
         currentText.innerHTML = typedNumber;
       }
@@ -68,6 +69,12 @@ window.addEventListener("load", () => {
     // nums = [finalResult];
     currentText.innerHTML = finalResult;
     // numberToBeAdded = finalResult;
+  });
+
+  negate.addEventListener('click', () => {
+    let text = currentText.innerHTML.toString();
+    currentText.innerHTML = text.substring(0, text.length - 1);
+    typedNumber = currentText.innerHTML;
   });
 
   // Clear screen on 'C' btn press
